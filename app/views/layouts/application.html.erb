@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="#">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="#">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="#">
+    <link rel="apple-touch-icon-precomposed" href="#">
+
+    <%= csrf_meta_tags %>
+  <%= stylesheet_link_tag    'application', media: 'all',
+                                            'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
+  <body>
+     <%= render 'layouts/header' %>
+     <div class="container">
+        <% flash.each do |key, value| %>
+          <% alert_class = case key
+                           when :notice then "success"
+                           when :alert then "danger"
+                           else key
+                           end %>
+          <%= content_tag :div, class: "alert alert-#{alert_class}" do %>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <%= value %>
+          <% end %>
+        <% end %>
+    </div>
+     <div class="container">
+       <%= yield %>
+     </div>
+   </body>
+</html>

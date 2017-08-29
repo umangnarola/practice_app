@@ -1,0 +1,31 @@
+<!-- <%= link_to 'sign up', new_user_registration_path%> -->
+<% if user_signed_in? %>
+<% if current_user.role == 'admin' %>
+<li><a href="/prodacts">Manage Product</a></li>
+<%else%>
+<li><a href="/prodacts">view Product</a></li>
+<%end %>
+<table  class="table table-striped" >
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Role</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% @users.each do |user| %>
+            <tr>
+              <td><%= user.firstname %></td>
+              <td><%= user.email %></td>
+              <td><%= user.role %></td>
+              <td id='<%= "admin_user_#{user.id}" %>'>
+                        <%= render partial: 'pages/index', locals: {admin_user: user}  %>
+              </td>
+            </tr>
+          <% end %>
+       </tbody>
+     </table>
+     <%= will_paginate @users %>
+<% end %>

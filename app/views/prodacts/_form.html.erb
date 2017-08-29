@@ -1,0 +1,37 @@
+<%= form_with(model: prodact, local: true) do |form| %>
+  <% if prodact.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(prodact.errors.count, "error") %> prohibited this prodact from being saved:</h2>
+      <ul>
+      <% prodact.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name, id: :prodact_name, class: 'form-control'  %>
+  </div>
+
+  <div class="field">
+    <%= form.label :decription %>
+    <%= form.text_area :decription, id: :prodact_decription, class: 'form-control'  %>
+  </div>
+
+  <div class="field">
+    <%= form.label :price %>
+    <%= form.text_field :price, id: :prodact_price, class: 'form-control'  %>
+  </div>
+
+  <div class="field">
+    <%= form.label :quantity %>
+    <%= form.number_field :quantity, id: :prodact_quantity, class: 'form-control'  %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit "create product" %>
+  </div>
+
+<% end %>

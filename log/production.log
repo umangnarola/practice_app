@@ -1,0 +1,679 @@
+I, [2017-08-25T17:13:38.049934 #12514]  INFO -- : [92963258-0cee-4228-be8c-baa76dbc993c] Started GET "/" for 127.0.0.1 at 2017-08-25 17:13:38 +0530
+I, [2017-08-25T17:13:38.058961 #12514]  INFO -- : [92963258-0cee-4228-be8c-baa76dbc993c] Processing by PagesController#index as HTML
+I, [2017-08-25T17:13:38.088279 #12514]  INFO -- : [92963258-0cee-4228-be8c-baa76dbc993c]   Rendering pages/index.html.erb within layouts/application
+I, [2017-08-25T17:13:38.089979 #12514]  INFO -- : [92963258-0cee-4228-be8c-baa76dbc993c]   Rendered pages/index.html.erb within layouts/application (1.5ms)
+I, [2017-08-25T17:13:38.094399 #12514]  INFO -- : [92963258-0cee-4228-be8c-baa76dbc993c]   Rendered layouts/_header.html.erb (1.0ms) [cache miss]
+I, [2017-08-25T17:13:38.094744 #12514]  INFO -- : [92963258-0cee-4228-be8c-baa76dbc993c] Completed 200 OK in 36ms (Views: 13.4ms)
+I, [2017-08-25T17:13:38.249045 #12514]  INFO -- : [a5f8034c-b0a7-4a0b-a2a9-b8801594ed2a] Started GET "/images/ico/favicon.ico" for 127.0.0.1 at 2017-08-25 17:13:38 +0530
+F, [2017-08-25T17:13:38.249704 #12514] FATAL -- : [a5f8034c-b0a7-4a0b-a2a9-b8801594ed2a]   
+F, [2017-08-25T17:13:38.249758 #12514] FATAL -- : [a5f8034c-b0a7-4a0b-a2a9-b8801594ed2a] ActionController::RoutingError (No route matches [GET] "/images/ico/favicon.ico"):
+F, [2017-08-25T17:13:38.249804 #12514] FATAL -- : [a5f8034c-b0a7-4a0b-a2a9-b8801594ed2a]   
+F, [2017-08-25T17:13:38.249860 #12514] FATAL -- : [a5f8034c-b0a7-4a0b-a2a9-b8801594ed2a] actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+[a5f8034c-b0a7-4a0b-a2a9-b8801594ed2a] actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+[a5f8034c-b0a7-4a0b-a2a9-b8801594ed2a] railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+[a5f8034c-b0a7-4a0b-a2a9-b8801594ed2a] railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+[a5f8034c-b0a7-4a0b-a2a9-b8801594ed2a] activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+[a5f8034c-b0a7-4a0b-a2a9-b8801594ed2a] activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+[a5f8034c-b0a7-4a0b-a2a9-b8801594ed2a] activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+[a5f8034c-b0a7-4a0b-a2a9-b8801594ed2a] railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+[a5f8034c-b0a7-4a0b-a2a9-b8801594ed2a] actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+[a5f8034c-b0a7-4a0b-a2a9-b8801594ed2a] actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+[a5f8034c-b0a7-4a0b-a2a9-b8801594ed2a] rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+[a5f8034c-b0a7-4a0b-a2a9-b8801594ed2a] rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+[a5f8034c-b0a7-4a0b-a2a9-b8801594ed2a] activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+[a5f8034c-b0a7-4a0b-a2a9-b8801594ed2a] actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+[a5f8034c-b0a7-4a0b-a2a9-b8801594ed2a] actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+[a5f8034c-b0a7-4a0b-a2a9-b8801594ed2a] rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+[a5f8034c-b0a7-4a0b-a2a9-b8801594ed2a] railties (5.1.1) lib/rails/engine.rb:522:in `call'
+[a5f8034c-b0a7-4a0b-a2a9-b8801594ed2a] puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+[a5f8034c-b0a7-4a0b-a2a9-b8801594ed2a] puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+[a5f8034c-b0a7-4a0b-a2a9-b8801594ed2a] puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+[a5f8034c-b0a7-4a0b-a2a9-b8801594ed2a] puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+[a5f8034c-b0a7-4a0b-a2a9-b8801594ed2a] puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+I, [2017-08-25T17:13:41.365760 #12514]  INFO -- : [b9c06a4f-3bea-4519-8cbb-890fac6ce5ff] Started GET "/users/sign_in" for 127.0.0.1 at 2017-08-25 17:13:41 +0530
+I, [2017-08-25T17:13:41.367121 #12514]  INFO -- : [b9c06a4f-3bea-4519-8cbb-890fac6ce5ff] Processing by Devise::SessionsController#new as HTML
+I, [2017-08-25T17:13:41.393832 #12514]  INFO -- : [b9c06a4f-3bea-4519-8cbb-890fac6ce5ff] Completed 500 Internal Server Error in 27ms
+F, [2017-08-25T17:13:41.395190 #12514] FATAL -- : [b9c06a4f-3bea-4519-8cbb-890fac6ce5ff]   
+F, [2017-08-25T17:13:41.395233 #12514] FATAL -- : [b9c06a4f-3bea-4519-8cbb-890fac6ce5ff] ActiveRecord::NoDatabaseError (FATAL:  database "First_Demo_App_production" does not exist
+):
+F, [2017-08-25T17:13:41.395260 #12514] FATAL -- : [b9c06a4f-3bea-4519-8cbb-890fac6ce5ff]   
+F, [2017-08-25T17:13:41.395313 #12514] FATAL -- : [b9c06a4f-3bea-4519-8cbb-890fac6ce5ff] activerecord (5.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:705:in `rescue in connect'
+[b9c06a4f-3bea-4519-8cbb-890fac6ce5ff] activerecord (5.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:701:in `connect'
+[b9c06a4f-3bea-4519-8cbb-890fac6ce5ff] activerecord (5.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:220:in `initialize'
+[b9c06a4f-3bea-4519-8cbb-890fac6ce5ff] activerecord (5.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:38:in `new'
+[b9c06a4f-3bea-4519-8cbb-890fac6ce5ff] activerecord (5.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:38:in `postgresql_connection'
+[b9c06a4f-3bea-4519-8cbb-890fac6ce5ff] activerecord (5.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:759:in `new_connection'
+[b9c06a4f-3bea-4519-8cbb-890fac6ce5ff] activerecord (5.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:803:in `checkout_new_connection'
+[b9c06a4f-3bea-4519-8cbb-890fac6ce5ff] activerecord (5.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:782:in `try_to_checkout_new_connection'
+[b9c06a4f-3bea-4519-8cbb-890fac6ce5ff] activerecord (5.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:743:in `acquire_connection'
+[b9c06a4f-3bea-4519-8cbb-890fac6ce5ff] activerecord (5.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:500:in `checkout'
+[b9c06a4f-3bea-4519-8cbb-890fac6ce5ff] activerecord (5.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:374:in `connection'
+[b9c06a4f-3bea-4519-8cbb-890fac6ce5ff] activerecord (5.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:931:in `retrieve_connection'
+[b9c06a4f-3bea-4519-8cbb-890fac6ce5ff] activerecord (5.1.1) lib/active_record/connection_handling.rb:116:in `retrieve_connection'
+[b9c06a4f-3bea-4519-8cbb-890fac6ce5ff] activerecord (5.1.1) lib/active_record/connection_handling.rb:88:in `connection'
+[b9c06a4f-3bea-4519-8cbb-890fac6ce5ff] activerecord (5.1.1) lib/active_record/model_schema.rb:451:in `load_schema!'
+[b9c06a4f-3bea-4519-8cbb-890fac6ce5ff] activerecord (5.1.1) lib/active_record/attributes.rb:233:in `load_schema!'
+[b9c06a4f-3bea-4519-8cbb-890fac6ce5ff] activerecord (5.1.1) lib/active_record/attribute_decorators.rb:50:in `load_schema!'
+[b9c06a4f-3bea-4519-8cbb-890fac6ce5ff] activerecord (5.1.1) lib/active_record/model_schema.rb:446:in `load_schema'
+[b9c06a4f-3bea-4519-8cbb-890fac6ce5ff] activerecord (5.1.1) lib/active_record/model_schema.rb:349:in `attribute_types'
+[b9c06a4f-3bea-4519-8cbb-890fac6ce5ff] activerecord (5.1.1) lib/active_record/attribute_methods.rb:179:in `has_attribute?'
+[b9c06a4f-3bea-4519-8cbb-890fac6ce5ff] activerecord (5.1.1) lib/active_record/inheritance.rb:55:in `new'
+[b9c06a4f-3bea-4519-8cbb-890fac6ce5ff] devise (4.3.0) app/controllers/devise/sessions_controller.rb:9:in `new'
+[b9c06a4f-3bea-4519-8cbb-890fac6ce5ff] actionpack (5.1.1) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+[b9c06a4f-3bea-4519-8cbb-890fac6ce5ff] actionpack (5.1.1) lib/abstract_controller/base.rb:186:in `process_action'
+[b9c06a4f-3bea-4519-8cbb-890fac6ce5ff] actionpack (5.1.1) lib/action_controller/metal/rendering.rb:30:in `process_action'
+[b9c06a4f-3bea-4519-8cbb-890fac6ce5ff] actionpack (5.1.1) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+[b9c06a4f-3bea-4519-8cbb-890fac6ce5ff] activesupport (5.1.1) lib/active_support/callbacks.rb:131:in `run_callbacks'
+[b9c06a4f-3bea-4519-8cbb-890fac6ce5ff] actionpack (5.1.1) lib/abstract_controller/callbacks.rb:19:in `process_action'
+[b9c06a4f-3bea-4519-8cbb-890fac6ce5ff] actionpack (5.1.1) lib/action_controller/metal/rescue.rb:20:in `process_action'
+[b9c06a4f-3bea-4519-8cbb-890fac6ce5ff] actionpack (5.1.1) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+[b9c06a4f-3bea-4519-8cbb-890fac6ce5ff] activesupport (5.1.1) lib/active_support/notifications.rb:166:in `block in instrument'
+[b9c06a4f-3bea-4519-8cbb-890fac6ce5ff] activesupport (5.1.1) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+[b9c06a4f-3bea-4519-8cbb-890fac6ce5ff] activesupport (5.1.1) lib/active_support/notifications.rb:166:in `instrument'
+[b9c06a4f-3bea-4519-8cbb-890fac6ce5ff] actionpack (5.1.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+[b9c06a4f-3bea-4519-8cbb-890fac6ce5ff] actionpack (5.1.1) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+[b9c06a4f-3bea-4519-8cbb-890fac6ce5ff] activerecord (5.1.1) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+[b9c06a4f-3bea-4519-8cbb-890fac6ce5ff] actionpack (5.1.1) lib/abstract_controller/base.rb:124:in `process'
+[b9c06a4f-3bea-4519-8cbb-890fac6ce5ff] actionview (5.1.1) lib/action_view/rendering.rb:30:in `process'
+[b9c06a4f-3bea-4519-8cbb-890fac6ce5ff] actionpack (5.1.1) lib/action_controller/metal.rb:189:in `dispatch'
+[b9c06a4f-3bea-4519-8cbb-890fac6ce5ff] actionpack (5.1.1) lib/action_controller/metal.rb:253:in `dispatch'
+[b9c06a4f-3bea-4519-8cbb-890fac6ce5ff] actionpack (5.1.1) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+[b9c06a4f-3bea-4519-8cbb-890fac6ce5ff] actionpack (5.1.1) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+[b9c06a4f-3bea-4519-8cbb-890fac6ce5ff] actionpack (5.1.1) lib/action_dispatch/routing/mapper.rb:16:in `block in <class:Constraints>'
+[b9c06a4f-3bea-4519-8cbb-890fac6ce5ff] actionpack (5.1.1) lib/action_dispatch/routing/mapper.rb:46:in `serve'
+[b9c06a4f-3bea-4519-8cbb-890fac6ce5ff] actionpack (5.1.1) lib/action_dispatch/journey/router.rb:46:in `block in serve'
+[b9c06a4f-3bea-4519-8cbb-890fac6ce5ff] actionpack (5.1.1) lib/action_dispatch/journey/router.rb:33:in `each'
+[b9c06a4f-3bea-4519-8cbb-890fac6ce5ff] actionpack (5.1.1) lib/action_dispatch/journey/router.rb:33:in `serve'
+[b9c06a4f-3bea-4519-8cbb-890fac6ce5ff] actionpack (5.1.1) lib/action_dispatch/routing/route_set.rb:832:in `call'
+[b9c06a4f-3bea-4519-8cbb-890fac6ce5ff] omniauth (1.6.1) lib/omniauth/builder.rb:63:in `call'
+[b9c06a4f-3bea-4519-8cbb-890fac6ce5ff] warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+[b9c06a4f-3bea-4519-8cbb-890fac6ce5ff] warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+[b9c06a4f-3bea-4519-8cbb-890fac6ce5ff] warden (1.2.7) lib/warden/manager.rb:35:in `call'
+[b9c06a4f-3bea-4519-8cbb-890fac6ce5ff] rack (2.0.3) lib/rack/etag.rb:25:in `call'
+[b9c06a4f-3bea-4519-8cbb-890fac6ce5ff] rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+[b9c06a4f-3bea-4519-8cbb-890fac6ce5ff] rack (2.0.3) lib/rack/head.rb:12:in `call'
+[b9c06a4f-3bea-4519-8cbb-890fac6ce5ff] rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+[b9c06a4f-3bea-4519-8cbb-890fac6ce5ff] rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+[b9c06a4f-3bea-4519-8cbb-890fac6ce5ff] actionpack (5.1.1) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+[b9c06a4f-3bea-4519-8cbb-890fac6ce5ff] actionpack (5.1.1) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+[b9c06a4f-3bea-4519-8cbb-890fac6ce5ff] activesupport (5.1.1) lib/active_support/callbacks.rb:97:in `run_callbacks'
+[b9c06a4f-3bea-4519-8cbb-890fac6ce5ff] actionpack (5.1.1) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+[b9c06a4f-3bea-4519-8cbb-890fac6ce5ff] actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+[b9c06a4f-3bea-4519-8cbb-890fac6ce5ff] actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+[b9c06a4f-3bea-4519-8cbb-890fac6ce5ff] railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+[b9c06a4f-3bea-4519-8cbb-890fac6ce5ff] railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+[b9c06a4f-3bea-4519-8cbb-890fac6ce5ff] activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+[b9c06a4f-3bea-4519-8cbb-890fac6ce5ff] activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+[b9c06a4f-3bea-4519-8cbb-890fac6ce5ff] activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+[b9c06a4f-3bea-4519-8cbb-890fac6ce5ff] railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+[b9c06a4f-3bea-4519-8cbb-890fac6ce5ff] actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+[b9c06a4f-3bea-4519-8cbb-890fac6ce5ff] actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+[b9c06a4f-3bea-4519-8cbb-890fac6ce5ff] rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+[b9c06a4f-3bea-4519-8cbb-890fac6ce5ff] rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+[b9c06a4f-3bea-4519-8cbb-890fac6ce5ff] activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+[b9c06a4f-3bea-4519-8cbb-890fac6ce5ff] actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+[b9c06a4f-3bea-4519-8cbb-890fac6ce5ff] actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+[b9c06a4f-3bea-4519-8cbb-890fac6ce5ff] rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+[b9c06a4f-3bea-4519-8cbb-890fac6ce5ff] railties (5.1.1) lib/rails/engine.rb:522:in `call'
+[b9c06a4f-3bea-4519-8cbb-890fac6ce5ff] puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+[b9c06a4f-3bea-4519-8cbb-890fac6ce5ff] puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+[b9c06a4f-3bea-4519-8cbb-890fac6ce5ff] puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+[b9c06a4f-3bea-4519-8cbb-890fac6ce5ff] puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+[b9c06a4f-3bea-4519-8cbb-890fac6ce5ff] puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+D, [2017-08-25T17:15:47.233666 #12539] DEBUG -- :   [1m[35m (4.2ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+D, [2017-08-25T17:15:47.301131 #12539] DEBUG -- :   [1m[35m (42.5ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+D, [2017-08-25T17:15:47.301921 #12539] DEBUG -- :   [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1464569427346199370);[0m
+D, [2017-08-25T17:15:47.314955 #12539] DEBUG -- :   [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+I, [2017-08-25T17:15:47.316230 #12539]  INFO -- : Migrating to DeviseCreateUsers (20170616121035)
+D, [2017-08-25T17:15:47.318279 #12539] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2017-08-25T17:15:47.363274 #12539] DEBUG -- :   [1m[35m (43.1ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "is_active" boolean DEFAULT 't', "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" timestamp, "last_sign_in_at" timestamp, "current_sign_in_ip" inet, "last_sign_in_ip" inet, "confirmation_token" character varying, "confirmed_at" timestamp, "confirmation_sent_at" timestamp, "unconfirmed_email" character varying, "failed_attempts" integer DEFAULT 0 NOT NULL, "unlock_token" character varying, "locked_at" timestamp, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+D, [2017-08-25T17:15:47.366534 #12539] DEBUG -- :   [1m[35m (0.8ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_email" ON "users"  ("email")[0m
+D, [2017-08-25T17:15:47.368705 #12539] DEBUG -- :   [1m[35m (0.7ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_reset_password_token" ON "users"  ("reset_password_token")[0m
+D, [2017-08-25T17:15:47.371603 #12539] DEBUG -- :   [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170616121035"]]
+D, [2017-08-25T17:15:47.372407 #12539] DEBUG -- :   [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+I, [2017-08-25T17:15:47.372495 #12539]  INFO -- : Migrating to AddFirstnameToUsers (20170616122558)
+D, [2017-08-25T17:15:47.373222 #12539] DEBUG -- :   [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+D, [2017-08-25T17:15:47.373911 #12539] DEBUG -- :   [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "users" ADD "firstname" character varying[0m
+D, [2017-08-25T17:15:47.374855 #12539] DEBUG -- :   [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170616122558"]]
+D, [2017-08-25T17:15:47.375332 #12539] DEBUG -- :   [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+I, [2017-08-25T17:15:47.375383 #12539]  INFO -- : Migrating to CreateProdacts (20170622044319)
+D, [2017-08-25T17:15:47.375890 #12539] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2017-08-25T17:15:47.379161 #12539] DEBUG -- :   [1m[35m (2.5ms)[0m  [1m[35mCREATE TABLE "prodacts" ("id" bigserial primary key, "name" character varying, "decription" text, "price" decimal(8,2), "quantity" integer, "is_active" boolean DEFAULT 't', "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+D, [2017-08-25T17:15:47.380185 #12539] DEBUG -- :   [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170622044319"]]
+D, [2017-08-25T17:15:47.389894 #12539] DEBUG -- :   [1m[35m (9.5ms)[0m  [1m[35mCOMMIT[0m
+I, [2017-08-25T17:15:47.389976 #12539]  INFO -- : Migrating to RolifyCreateRoles (20170824120933)
+D, [2017-08-25T17:15:47.390670 #12539] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2017-08-25T17:15:47.393636 #12539] DEBUG -- :   [1m[35m (2.4ms)[0m  [1m[35mCREATE TABLE "roles" ("id" bigserial primary key, "name" character varying, "resource_type" character varying, "resource_id" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+D, [2017-08-25T17:15:47.395928 #12539] DEBUG -- :   [1m[35m (0.8ms)[0m  [1m[35mCREATE  INDEX  "index_roles_on_resource_type_and_resource_id" ON "roles"  ("resource_type", "resource_id")[0m
+D, [2017-08-25T17:15:47.396853 #12539] DEBUG -- :   [1m[35m (0.6ms)[0m  [1m[35mCREATE TABLE "users_roles" ("user_id" bigint, "role_id" bigint)[0m
+D, [2017-08-25T17:15:47.399881 #12539] DEBUG -- :   [1m[35m (0.8ms)[0m  [1m[35mCREATE  INDEX  "index_users_roles_on_user_id" ON "users_roles"  ("user_id")[0m
+D, [2017-08-25T17:15:47.403809 #12539] DEBUG -- :   [1m[35m (1.4ms)[0m  [1m[35mCREATE  INDEX  "index_users_roles_on_role_id" ON "users_roles"  ("role_id")[0m
+D, [2017-08-25T17:15:47.406936 #12539] DEBUG -- :   [1m[35m (0.8ms)[0m  [1m[35mCREATE  INDEX  "index_roles_on_name" ON "roles"  ("name")[0m
+D, [2017-08-25T17:15:47.410677 #12539] DEBUG -- :   [1m[35m (0.8ms)[0m  [1m[35mCREATE  INDEX  "index_roles_on_name_and_resource_type_and_resource_id" ON "roles"  ("name", "resource_type", "resource_id")[0m
+D, [2017-08-25T17:15:47.412923 #12539] DEBUG -- :   [1m[35m (0.8ms)[0m  [1m[35mCREATE  INDEX  "index_users_roles_on_user_id_and_role_id" ON "users_roles"  ("user_id", "role_id")[0m
+D, [2017-08-25T17:15:47.414125 #12539] DEBUG -- :   [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170824120933"]]
+D, [2017-08-25T17:15:47.415123 #12539] DEBUG -- :   [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+I, [2017-08-25T17:15:47.415216 #12539]  INFO -- : Migrating to AddUserTorole (20170825053145)
+D, [2017-08-25T17:15:47.415965 #12539] DEBUG -- :   [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+D, [2017-08-25T17:15:47.416581 #12539] DEBUG -- :   [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "users" ADD "role" integer[0m
+D, [2017-08-25T17:15:47.417531 #12539] DEBUG -- :   [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170825053145"]]
+D, [2017-08-25T17:15:47.418005 #12539] DEBUG -- :   [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+D, [2017-08-25T17:15:47.420820 #12539] DEBUG -- :   [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+D, [2017-08-25T17:15:47.425374 #12539] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2017-08-25T17:15:47.426674 #12539] DEBUG -- :   [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "production"], ["created_at", "2017-08-25 11:45:47.425655"], ["updated_at", "2017-08-25 11:45:47.425655"]]
+D, [2017-08-25T17:15:47.427234 #12539] DEBUG -- :   [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+D, [2017-08-25T17:15:47.427513 #12539] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(1464569427346199370)[0m
+I, [2017-08-25T17:16:03.161157 #12543]  INFO -- : [7eb3a5f9-409f-4dc0-970a-59b6fcb97170] Started GET "/" for 127.0.0.1 at 2017-08-25 17:16:03 +0530
+I, [2017-08-25T17:16:03.169684 #12543]  INFO -- : [7eb3a5f9-409f-4dc0-970a-59b6fcb97170] Processing by PagesController#index as HTML
+I, [2017-08-25T17:16:03.192195 #12543]  INFO -- : [7eb3a5f9-409f-4dc0-970a-59b6fcb97170]   Rendering pages/index.html.erb within layouts/application
+I, [2017-08-25T17:16:03.193876 #12543]  INFO -- : [7eb3a5f9-409f-4dc0-970a-59b6fcb97170]   Rendered pages/index.html.erb within layouts/application (1.5ms)
+I, [2017-08-25T17:16:03.199978 #12543]  INFO -- : [7eb3a5f9-409f-4dc0-970a-59b6fcb97170]   Rendered layouts/_header.html.erb (1.0ms) [cache miss]
+I, [2017-08-25T17:16:03.200392 #12543]  INFO -- : [7eb3a5f9-409f-4dc0-970a-59b6fcb97170] Completed 200 OK in 31ms (Views: 12.9ms)
+I, [2017-08-25T17:16:05.744529 #12543]  INFO -- : [829d55b5-0f39-456e-97aa-4d713e7861ec] Started GET "/users/sign_in" for 127.0.0.1 at 2017-08-25 17:16:05 +0530
+I, [2017-08-25T17:16:05.746232 #12543]  INFO -- : [829d55b5-0f39-456e-97aa-4d713e7861ec] Processing by Devise::SessionsController#new as HTML
+I, [2017-08-25T17:16:05.805337 #12543]  INFO -- : [829d55b5-0f39-456e-97aa-4d713e7861ec]   Rendering devise/sessions/new.html.erb within layouts/application
+I, [2017-08-25T17:16:05.832404 #12543]  INFO -- : [829d55b5-0f39-456e-97aa-4d713e7861ec]   Rendered devise/shared/_links.html.erb (6.3ms) [cache miss]
+I, [2017-08-25T17:16:05.832501 #12543]  INFO -- : [829d55b5-0f39-456e-97aa-4d713e7861ec]   Rendered devise/sessions/new.html.erb within layouts/application (27.1ms)
+I, [2017-08-25T17:16:05.833299 #12543]  INFO -- : [829d55b5-0f39-456e-97aa-4d713e7861ec]   Rendered layouts/_header.html.erb (0.2ms) [cache miss]
+I, [2017-08-25T17:16:05.833543 #12543]  INFO -- : [829d55b5-0f39-456e-97aa-4d713e7861ec] Completed 200 OK in 87ms (Views: 34.6ms | ActiveRecord: 13.5ms)
+I, [2017-08-25T17:16:05.936748 #12543]  INFO -- : [14ca2a2c-9584-445d-81d4-cf20492f375e] Started GET "/users/images/ico/favicon.ico" for 127.0.0.1 at 2017-08-25 17:16:05 +0530
+F, [2017-08-25T17:16:05.937447 #12543] FATAL -- : [14ca2a2c-9584-445d-81d4-cf20492f375e]   
+F, [2017-08-25T17:16:05.937498 #12543] FATAL -- : [14ca2a2c-9584-445d-81d4-cf20492f375e] ActionController::RoutingError (No route matches [GET] "/users/images/ico/favicon.ico"):
+F, [2017-08-25T17:16:05.937529 #12543] FATAL -- : [14ca2a2c-9584-445d-81d4-cf20492f375e]   
+F, [2017-08-25T17:16:05.937562 #12543] FATAL -- : [14ca2a2c-9584-445d-81d4-cf20492f375e] actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+[14ca2a2c-9584-445d-81d4-cf20492f375e] actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+[14ca2a2c-9584-445d-81d4-cf20492f375e] railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+[14ca2a2c-9584-445d-81d4-cf20492f375e] railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+[14ca2a2c-9584-445d-81d4-cf20492f375e] activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+[14ca2a2c-9584-445d-81d4-cf20492f375e] activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+[14ca2a2c-9584-445d-81d4-cf20492f375e] activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+[14ca2a2c-9584-445d-81d4-cf20492f375e] railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+[14ca2a2c-9584-445d-81d4-cf20492f375e] actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+[14ca2a2c-9584-445d-81d4-cf20492f375e] actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+[14ca2a2c-9584-445d-81d4-cf20492f375e] rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+[14ca2a2c-9584-445d-81d4-cf20492f375e] rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+[14ca2a2c-9584-445d-81d4-cf20492f375e] activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+[14ca2a2c-9584-445d-81d4-cf20492f375e] actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+[14ca2a2c-9584-445d-81d4-cf20492f375e] actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+[14ca2a2c-9584-445d-81d4-cf20492f375e] rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+[14ca2a2c-9584-445d-81d4-cf20492f375e] railties (5.1.1) lib/rails/engine.rb:522:in `call'
+[14ca2a2c-9584-445d-81d4-cf20492f375e] puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+[14ca2a2c-9584-445d-81d4-cf20492f375e] puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+[14ca2a2c-9584-445d-81d4-cf20492f375e] puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+[14ca2a2c-9584-445d-81d4-cf20492f375e] puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+[14ca2a2c-9584-445d-81d4-cf20492f375e] puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+I, [2017-08-25T17:16:08.484351 #12543]  INFO -- : [7dbc3286-ded3-45dc-88ee-fc911ca53281] Started GET "/users/sign_up" for 127.0.0.1 at 2017-08-25 17:16:08 +0530
+I, [2017-08-25T17:16:08.485562 #12543]  INFO -- : [7dbc3286-ded3-45dc-88ee-fc911ca53281] Processing by Devise::RegistrationsController#new as HTML
+I, [2017-08-25T17:16:08.490863 #12543]  INFO -- : [7dbc3286-ded3-45dc-88ee-fc911ca53281]   Rendering devise/registrations/new.html.erb within layouts/application
+I, [2017-08-25T17:16:08.494574 #12543]  INFO -- : [7dbc3286-ded3-45dc-88ee-fc911ca53281]   Rendered devise/shared/_links.html.erb (0.5ms) [cache miss]
+I, [2017-08-25T17:16:08.494665 #12543]  INFO -- : [7dbc3286-ded3-45dc-88ee-fc911ca53281]   Rendered devise/registrations/new.html.erb within layouts/application (3.7ms)
+I, [2017-08-25T17:16:08.495366 #12543]  INFO -- : [7dbc3286-ded3-45dc-88ee-fc911ca53281]   Rendered layouts/_header.html.erb (0.2ms) [cache miss]
+I, [2017-08-25T17:16:08.495642 #12543]  INFO -- : [7dbc3286-ded3-45dc-88ee-fc911ca53281] Completed 200 OK in 10ms (Views: 8.9ms | ActiveRecord: 0.0ms)
+I, [2017-08-25T17:16:23.683523 #12543]  INFO -- : [250918ae-4ddb-4b4a-b087-4501c42eb9bb] Started POST "/users" for 127.0.0.1 at 2017-08-25 17:16:23 +0530
+I, [2017-08-25T17:16:23.684301 #12543]  INFO -- : [250918ae-4ddb-4b4a-b087-4501c42eb9bb] Processing by Devise::RegistrationsController#create as HTML
+I, [2017-08-25T17:16:23.684375 #12543]  INFO -- : [250918ae-4ddb-4b4a-b087-4501c42eb9bb]   Parameters: {"utf8"=>"✓", "authenticity_token"=>"E6S31uSvFbHWj+QXKp8ZtRj1G+7jMrXHKD2WtcfORnRC5Vvo15GJSPlNkcAa3gYdLwTamgV9mM9l5Ky/4H6NrQ==", "user"=>{"firstname"=>"umang", "email"=>"umang.naik98@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "role"=>"admin"}, "commit"=>"Sign up"}
+D, [2017-08-25T17:16:23.842805 #12543] DEBUG -- : [250918ae-4ddb-4b4a-b087-4501c42eb9bb]   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2017-08-25T17:16:23.845180 #12543] DEBUG -- : [250918ae-4ddb-4b4a-b087-4501c42eb9bb]   [1m[36mUser Exists (0.8ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "umang.naik98@gmail.com"], ["LIMIT", 1]]
+D, [2017-08-25T17:16:23.847168 #12543] DEBUG -- : [250918ae-4ddb-4b4a-b087-4501c42eb9bb]   [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "confirmation_token", "confirmation_sent_at", "created_at", "updated_at", "firstname", "role") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["email", "umang.naik98@gmail.com"], ["encrypted_password", "$2a$11$/c80DjIGQrrobexXDl4Ww.yLL977zTGBmGkwselgaVyLEcehZ.e5W"], ["confirmation_token", "GE9dwkyCy71p5xzchfFQ"], ["confirmation_sent_at", "2017-08-25 11:46:23.845646"], ["created_at", "2017-08-25 11:46:23.845485"], ["updated_at", "2017-08-25 11:46:23.845485"], ["firstname", "umang"], ["role", 0]]
+D, [2017-08-25T17:16:23.848046 #12543] DEBUG -- : [250918ae-4ddb-4b4a-b087-4501c42eb9bb]   [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+I, [2017-08-25T17:16:23.870006 #12543]  INFO -- : [250918ae-4ddb-4b4a-b087-4501c42eb9bb]   Rendering devise/mailer/confirmation_instructions.html.erb
+I, [2017-08-25T17:16:23.870802 #12543]  INFO -- : [250918ae-4ddb-4b4a-b087-4501c42eb9bb]   Rendered devise/mailer/confirmation_instructions.html.erb (0.7ms)
+D, [2017-08-25T17:16:24.047626 #12543] DEBUG -- : [250918ae-4ddb-4b4a-b087-4501c42eb9bb] Devise::Mailer#confirmation_instructions: processed outbound mail in 198.8ms
+I, [2017-08-25T17:16:29.587856 #12543]  INFO -- : [250918ae-4ddb-4b4a-b087-4501c42eb9bb] Sent mail to umang.naik98@gmail.com (5540.1ms)
+D, [2017-08-25T17:16:29.587936 #12543] DEBUG -- : [250918ae-4ddb-4b4a-b087-4501c42eb9bb] Date: Fri, 25 Aug 2017 17:16:24 +0530
+From: umang.naik98@gmail.com
+Reply-To: umang.naik98@gmail.com
+To: umang.naik98@gmail.com
+Message-ID: <59a00e10d94b_30ff3fe58709bcc46879f@C100-10s-iMac.local.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome umang.naik98@gmail.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://locahost:3000/users/confirmation?confirmation_token=GE9dwkyCy71p5xzchfFQ">Confirm my account</a></p>
+
+I, [2017-08-25T17:16:29.597711 #12543]  INFO -- : [250918ae-4ddb-4b4a-b087-4501c42eb9bb] Redirected to http://0.0.0.0:3000/
+I, [2017-08-25T17:16:29.597902 #12543]  INFO -- : [250918ae-4ddb-4b4a-b087-4501c42eb9bb] Completed 302 Found in 5913ms (ActiveRecord: 1.8ms)
+I, [2017-08-25T17:16:29.600726 #12543]  INFO -- : [e58c1823-f522-4fcb-b816-862506213636] Started GET "/" for 127.0.0.1 at 2017-08-25 17:16:29 +0530
+I, [2017-08-25T17:16:29.601415 #12543]  INFO -- : [e58c1823-f522-4fcb-b816-862506213636] Processing by PagesController#index as HTML
+I, [2017-08-25T17:16:29.602583 #12543]  INFO -- : [e58c1823-f522-4fcb-b816-862506213636]   Rendering pages/index.html.erb within layouts/application
+I, [2017-08-25T17:16:29.602866 #12543]  INFO -- : [e58c1823-f522-4fcb-b816-862506213636]   Rendered pages/index.html.erb within layouts/application (0.2ms)
+I, [2017-08-25T17:16:29.603602 #12543]  INFO -- : [e58c1823-f522-4fcb-b816-862506213636]   Rendered layouts/_header.html.erb (0.2ms) [cache miss]
+I, [2017-08-25T17:16:29.603930 #12543]  INFO -- : [e58c1823-f522-4fcb-b816-862506213636] Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.0ms)
+I, [2017-08-25T17:16:57.499985 #12543]  INFO -- : [dbb28d22-12ff-43ef-8b51-eaaa94cbec12] Started GET "/" for 127.0.0.1 at 2017-08-25 17:16:57 +0530
+I, [2017-08-25T17:16:57.500495 #12543]  INFO -- : [dbb28d22-12ff-43ef-8b51-eaaa94cbec12] Processing by PagesController#index as HTML
+I, [2017-08-25T17:16:57.501437 #12543]  INFO -- : [dbb28d22-12ff-43ef-8b51-eaaa94cbec12]   Rendering pages/index.html.erb within layouts/application
+I, [2017-08-25T17:16:57.501675 #12543]  INFO -- : [dbb28d22-12ff-43ef-8b51-eaaa94cbec12]   Rendered pages/index.html.erb within layouts/application (0.2ms)
+I, [2017-08-25T17:16:57.502333 #12543]  INFO -- : [dbb28d22-12ff-43ef-8b51-eaaa94cbec12]   Rendered layouts/_header.html.erb (0.1ms) [cache miss]
+I, [2017-08-25T17:16:57.502514 #12543]  INFO -- : [dbb28d22-12ff-43ef-8b51-eaaa94cbec12] Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.0ms)
+I, [2017-08-25T17:18:17.859960 #12564]  INFO -- : [6cf34832-ceed-4d81-9eaa-828059e04af8] Started GET "/" for 127.0.0.1 at 2017-08-25 17:18:17 +0530
+I, [2017-08-25T17:18:17.864896 #12564]  INFO -- : [6cf34832-ceed-4d81-9eaa-828059e04af8] Processing by PagesController#index as HTML
+I, [2017-08-25T17:18:17.883983 #12564]  INFO -- : [6cf34832-ceed-4d81-9eaa-828059e04af8]   Rendering pages/index.html.erb within layouts/application
+I, [2017-08-25T17:18:17.885138 #12564]  INFO -- : [6cf34832-ceed-4d81-9eaa-828059e04af8]   Rendered pages/index.html.erb within layouts/application (1.0ms)
+I, [2017-08-25T17:18:17.888752 #12564]  INFO -- : [6cf34832-ceed-4d81-9eaa-828059e04af8]   Rendered layouts/_header.html.erb (0.7ms) [cache miss]
+I, [2017-08-25T17:18:17.889058 #12564]  INFO -- : [6cf34832-ceed-4d81-9eaa-828059e04af8] Completed 200 OK in 24ms (Views: 9.2ms)
+I, [2017-08-25T17:18:20.511983 #12564]  INFO -- : [bd87f018-4fb7-41a2-8622-70d7f4c230d2] Started GET "/users/sign_in" for 127.0.0.1 at 2017-08-25 17:18:20 +0530
+I, [2017-08-25T17:18:20.513326 #12564]  INFO -- : [bd87f018-4fb7-41a2-8622-70d7f4c230d2] Processing by Devise::SessionsController#new as HTML
+I, [2017-08-25T17:18:20.573257 #12564]  INFO -- : [bd87f018-4fb7-41a2-8622-70d7f4c230d2]   Rendering devise/sessions/new.html.erb within layouts/application
+I, [2017-08-25T17:18:20.596161 #12564]  INFO -- : [bd87f018-4fb7-41a2-8622-70d7f4c230d2]   Rendered devise/shared/_links.html.erb (1.9ms) [cache miss]
+I, [2017-08-25T17:18:20.596264 #12564]  INFO -- : [bd87f018-4fb7-41a2-8622-70d7f4c230d2]   Rendered devise/sessions/new.html.erb within layouts/application (22.9ms)
+I, [2017-08-25T17:18:20.597165 #12564]  INFO -- : [bd87f018-4fb7-41a2-8622-70d7f4c230d2]   Rendered layouts/_header.html.erb (0.2ms) [cache miss]
+I, [2017-08-25T17:18:20.597500 #12564]  INFO -- : [bd87f018-4fb7-41a2-8622-70d7f4c230d2] Completed 200 OK in 84ms (Views: 31.9ms | ActiveRecord: 12.8ms)
+I, [2017-08-25T17:18:24.506581 #12564]  INFO -- : [4c01c5ae-290c-41a8-8b25-1e51d4c4d917] Started GET "/users/confirmation/new" for 127.0.0.1 at 2017-08-25 17:18:24 +0530
+I, [2017-08-25T17:18:24.508811 #12564]  INFO -- : [4c01c5ae-290c-41a8-8b25-1e51d4c4d917] Processing by Devise::ConfirmationsController#new as HTML
+I, [2017-08-25T17:18:24.515461 #12564]  INFO -- : [4c01c5ae-290c-41a8-8b25-1e51d4c4d917]   Rendering devise/confirmations/new.html.erb within layouts/application
+I, [2017-08-25T17:18:24.517981 #12564]  INFO -- : [4c01c5ae-290c-41a8-8b25-1e51d4c4d917]   Rendered devise/shared/_links.html.erb (0.6ms) [cache miss]
+I, [2017-08-25T17:18:24.518099 #12564]  INFO -- : [4c01c5ae-290c-41a8-8b25-1e51d4c4d917]   Rendered devise/confirmations/new.html.erb within layouts/application (2.5ms)
+I, [2017-08-25T17:18:24.518995 #12564]  INFO -- : [4c01c5ae-290c-41a8-8b25-1e51d4c4d917]   Rendered layouts/_header.html.erb (0.2ms) [cache miss]
+I, [2017-08-25T17:18:24.519331 #12564]  INFO -- : [4c01c5ae-290c-41a8-8b25-1e51d4c4d917] Completed 200 OK in 10ms (Views: 6.7ms | ActiveRecord: 0.0ms)
+I, [2017-08-25T17:18:28.107382 #12564]  INFO -- : [6a18bfef-8a57-4398-aacd-e6d06f5d6548] Started POST "/users/confirmation" for 127.0.0.1 at 2017-08-25 17:18:28 +0530
+I, [2017-08-25T17:18:28.108688 #12564]  INFO -- : [6a18bfef-8a57-4398-aacd-e6d06f5d6548] Processing by Devise::ConfirmationsController#create as HTML
+I, [2017-08-25T17:18:28.108838 #12564]  INFO -- : [6a18bfef-8a57-4398-aacd-e6d06f5d6548]   Parameters: {"utf8"=>"✓", "authenticity_token"=>"klv7GBGjkpeFVb58027/KQ936TI7IeEW91baUKwRaVf24L930gnp95RuL+kSHZXbGaQt9GVlsr3izBXE3rYTYg==", "user"=>{"email"=>"umang.naik98@gmail.com"}, "commit"=>"Resend confirmation instructions"}
+D, [2017-08-25T17:18:28.126408 #12564] DEBUG -- : [6a18bfef-8a57-4398-aacd-e6d06f5d6548]   [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."unconfirmed_email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["unconfirmed_email", "umang.naik98@gmail.com"], ["LIMIT", 1]]
+D, [2017-08-25T17:18:28.129256 #12564] DEBUG -- : [6a18bfef-8a57-4398-aacd-e6d06f5d6548]   [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "umang.naik98@gmail.com"], ["LIMIT", 1]]
+D, [2017-08-25T17:18:28.130494 #12564] DEBUG -- : [6a18bfef-8a57-4398-aacd-e6d06f5d6548]   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2017-08-25T17:18:28.131971 #12564] DEBUG -- : [6a18bfef-8a57-4398-aacd-e6d06f5d6548]   [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+I, [2017-08-25T17:18:28.159239 #12564]  INFO -- : [6a18bfef-8a57-4398-aacd-e6d06f5d6548]   Rendering devise/mailer/confirmation_instructions.html.erb
+I, [2017-08-25T17:18:28.160116 #12564]  INFO -- : [6a18bfef-8a57-4398-aacd-e6d06f5d6548]   Rendered devise/mailer/confirmation_instructions.html.erb (0.8ms)
+D, [2017-08-25T17:18:28.318258 #12564] DEBUG -- : [6a18bfef-8a57-4398-aacd-e6d06f5d6548] Devise::Mailer#confirmation_instructions: processed outbound mail in 185.2ms
+I, [2017-08-25T17:18:32.512847 #12564]  INFO -- : [6a18bfef-8a57-4398-aacd-e6d06f5d6548] Sent mail to umang.naik98@gmail.com (4194.4ms)
+D, [2017-08-25T17:18:32.512929 #12564] DEBUG -- : [6a18bfef-8a57-4398-aacd-e6d06f5d6548] Date: Fri, 25 Aug 2017 17:18:28 +0530
+From: umang.naik98@gmail.com
+Reply-To: umang.naik98@gmail.com
+To: umang.naik98@gmail.com
+Message-ID: <59a00e8c4e8b3_31143fc2bf13745c1837@C100-10s-iMac.local.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome umang.naik98@gmail.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://locahost:3000/users/confirmation?confirmation_token=GE9dwkyCy71p5xzchfFQ">Confirm my account</a></p>
+
+I, [2017-08-25T17:18:32.521344 #12564]  INFO -- : [6a18bfef-8a57-4398-aacd-e6d06f5d6548] Redirected to http://localhost:3000/users/sign_in
+I, [2017-08-25T17:18:32.521507 #12564]  INFO -- : [6a18bfef-8a57-4398-aacd-e6d06f5d6548] Completed 302 Found in 4413ms (ActiveRecord: 3.1ms)
+I, [2017-08-25T17:18:32.524545 #12564]  INFO -- : [179ea476-031c-4047-95e6-fb6e18e3154c] Started GET "/users/sign_in" for 127.0.0.1 at 2017-08-25 17:18:32 +0530
+I, [2017-08-25T17:18:32.525294 #12564]  INFO -- : [179ea476-031c-4047-95e6-fb6e18e3154c] Processing by Devise::SessionsController#new as HTML
+I, [2017-08-25T17:18:32.526726 #12564]  INFO -- : [179ea476-031c-4047-95e6-fb6e18e3154c]   Rendering devise/sessions/new.html.erb within layouts/application
+I, [2017-08-25T17:18:32.528759 #12564]  INFO -- : [179ea476-031c-4047-95e6-fb6e18e3154c]   Rendered devise/shared/_links.html.erb (0.4ms) [cache miss]
+I, [2017-08-25T17:18:32.528837 #12564]  INFO -- : [179ea476-031c-4047-95e6-fb6e18e3154c]   Rendered devise/sessions/new.html.erb within layouts/application (2.0ms)
+I, [2017-08-25T17:18:32.529576 #12564]  INFO -- : [179ea476-031c-4047-95e6-fb6e18e3154c]   Rendered layouts/_header.html.erb (0.2ms) [cache miss]
+I, [2017-08-25T17:18:32.529898 #12564]  INFO -- : [179ea476-031c-4047-95e6-fb6e18e3154c] Completed 200 OK in 5ms (Views: 3.4ms | ActiveRecord: 0.0ms)
+D, [2017-08-25T17:20:44.708619 #12733] DEBUG -- :   [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT $1[0m  [["LIMIT", 11]]
+I, [2017-08-25T17:23:27.309586 #12564]  INFO -- : [eef062b4-05a2-4f44-bbb7-be467b5155bb] Started GET "/users/sign_in" for 127.0.0.1 at 2017-08-25 17:23:27 +0530
+I, [2017-08-25T17:23:27.310284 #12564]  INFO -- : [eef062b4-05a2-4f44-bbb7-be467b5155bb] Processing by Devise::SessionsController#new as HTML
+I, [2017-08-25T17:23:27.311655 #12564]  INFO -- : [eef062b4-05a2-4f44-bbb7-be467b5155bb]   Rendering devise/sessions/new.html.erb within layouts/application
+I, [2017-08-25T17:23:27.313873 #12564]  INFO -- : [eef062b4-05a2-4f44-bbb7-be467b5155bb]   Rendered devise/shared/_links.html.erb (0.4ms) [cache miss]
+I, [2017-08-25T17:23:27.313984 #12564]  INFO -- : [eef062b4-05a2-4f44-bbb7-be467b5155bb]   Rendered devise/sessions/new.html.erb within layouts/application (2.2ms)
+I, [2017-08-25T17:23:27.314709 #12564]  INFO -- : [eef062b4-05a2-4f44-bbb7-be467b5155bb]   Rendered layouts/_header.html.erb (0.2ms) [cache miss]
+I, [2017-08-25T17:23:27.314962 #12564]  INFO -- : [eef062b4-05a2-4f44-bbb7-be467b5155bb] Completed 200 OK in 5ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+I, [2017-08-25T17:23:32.786689 #12564]  INFO -- : [1e5ec284-7be7-4b5f-b6f2-69d7f71795eb] Started GET "/" for 127.0.0.1 at 2017-08-25 17:23:32 +0530
+I, [2017-08-25T17:23:32.787296 #12564]  INFO -- : [1e5ec284-7be7-4b5f-b6f2-69d7f71795eb] Processing by PagesController#index as HTML
+I, [2017-08-25T17:23:32.788532 #12564]  INFO -- : [1e5ec284-7be7-4b5f-b6f2-69d7f71795eb]   Rendering pages/index.html.erb within layouts/application
+I, [2017-08-25T17:23:32.788887 #12564]  INFO -- : [1e5ec284-7be7-4b5f-b6f2-69d7f71795eb]   Rendered pages/index.html.erb within layouts/application (0.2ms)
+I, [2017-08-25T17:23:32.789703 #12564]  INFO -- : [1e5ec284-7be7-4b5f-b6f2-69d7f71795eb]   Rendered layouts/_header.html.erb (0.3ms) [cache miss]
+I, [2017-08-25T17:23:32.790034 #12564]  INFO -- : [1e5ec284-7be7-4b5f-b6f2-69d7f71795eb] Completed 200 OK in 3ms (Views: 1.7ms | ActiveRecord: 0.0ms)
+I, [2017-08-25T17:23:34.410080 #12564]  INFO -- : [67f85941-0bcf-4d4a-859b-793ee358f118] Started GET "/users/sign_in" for 127.0.0.1 at 2017-08-25 17:23:34 +0530
+I, [2017-08-25T17:23:34.411134 #12564]  INFO -- : [67f85941-0bcf-4d4a-859b-793ee358f118] Processing by Devise::SessionsController#new as HTML
+I, [2017-08-25T17:23:34.412887 #12564]  INFO -- : [67f85941-0bcf-4d4a-859b-793ee358f118]   Rendering devise/sessions/new.html.erb within layouts/application
+I, [2017-08-25T17:23:34.414837 #12564]  INFO -- : [67f85941-0bcf-4d4a-859b-793ee358f118]   Rendered devise/shared/_links.html.erb (0.4ms) [cache miss]
+I, [2017-08-25T17:23:34.414914 #12564]  INFO -- : [67f85941-0bcf-4d4a-859b-793ee358f118]   Rendered devise/sessions/new.html.erb within layouts/application (1.9ms)
+I, [2017-08-25T17:23:34.415677 #12564]  INFO -- : [67f85941-0bcf-4d4a-859b-793ee358f118]   Rendered layouts/_header.html.erb (0.2ms) [cache miss]
+I, [2017-08-25T17:23:34.415937 #12564]  INFO -- : [67f85941-0bcf-4d4a-859b-793ee358f118] Completed 200 OK in 5ms (Views: 3.3ms | ActiveRecord: 0.0ms)
+I, [2017-08-25T17:23:49.800069 #12564]  INFO -- : [5aa05d88-3f09-4952-a0c0-d34e6e5c8aed] Started POST "/users/sign_in" for 127.0.0.1 at 2017-08-25 17:23:49 +0530
+I, [2017-08-25T17:23:49.800824 #12564]  INFO -- : [5aa05d88-3f09-4952-a0c0-d34e6e5c8aed] Processing by Devise::SessionsController#create as HTML
+I, [2017-08-25T17:23:49.800907 #12564]  INFO -- : [5aa05d88-3f09-4952-a0c0-d34e6e5c8aed]   Parameters: {"utf8"=>"✓", "authenticity_token"=>"dKPc4wrnrEjh1TfHxg51jDHVUOS1ANonp9B0j91MU8sl4jDdOdkwsc4XQhD2T2okBiSRkFNP9y/qCU6F+vyYEg==", "user"=>{"email"=>"umang.naik98@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+D, [2017-08-25T17:23:49.802836 #12564] DEBUG -- : [5aa05d88-3f09-4952-a0c0-d34e6e5c8aed]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "umang.naik98@gmail.com"], ["LIMIT", 1]]
+D, [2017-08-25T17:23:49.953602 #12564] DEBUG -- : [5aa05d88-3f09-4952-a0c0-d34e6e5c8aed]   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2017-08-25T17:23:49.954523 #12564] DEBUG -- : [5aa05d88-3f09-4952-a0c0-d34e6e5c8aed]   [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+I, [2017-08-25T17:23:49.954779 #12564]  INFO -- : [5aa05d88-3f09-4952-a0c0-d34e6e5c8aed] Completed 401 Unauthorized in 154ms (ActiveRecord: 0.6ms)
+I, [2017-08-25T17:23:49.958775 #12564]  INFO -- : [a8130db8-ee58-4214-bd1a-c38060e0a375] Started GET "/users/sign_in" for 127.0.0.1 at 2017-08-25 17:23:49 +0530
+I, [2017-08-25T17:23:49.959460 #12564]  INFO -- : [a8130db8-ee58-4214-bd1a-c38060e0a375] Processing by Devise::SessionsController#new as HTML
+I, [2017-08-25T17:23:49.960806 #12564]  INFO -- : [a8130db8-ee58-4214-bd1a-c38060e0a375]   Rendering devise/sessions/new.html.erb within layouts/application
+I, [2017-08-25T17:23:49.962789 #12564]  INFO -- : [a8130db8-ee58-4214-bd1a-c38060e0a375]   Rendered devise/shared/_links.html.erb (0.4ms) [cache miss]
+I, [2017-08-25T17:23:49.962881 #12564]  INFO -- : [a8130db8-ee58-4214-bd1a-c38060e0a375]   Rendered devise/sessions/new.html.erb within layouts/application (2.0ms)
+I, [2017-08-25T17:23:49.963557 #12564]  INFO -- : [a8130db8-ee58-4214-bd1a-c38060e0a375]   Rendered layouts/_header.html.erb (0.2ms) [cache miss]
+I, [2017-08-25T17:23:49.963838 #12564]  INFO -- : [a8130db8-ee58-4214-bd1a-c38060e0a375] Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+I, [2017-08-25T17:24:15.189217 #12564]  INFO -- : [f29940f4-a467-4166-abd9-b356a62e359c] Started GET "/users/sign_in" for 127.0.0.1 at 2017-08-25 17:24:15 +0530
+I, [2017-08-25T17:24:15.190078 #12564]  INFO -- : [f29940f4-a467-4166-abd9-b356a62e359c] Processing by Devise::SessionsController#new as HTML
+I, [2017-08-25T17:24:15.191592 #12564]  INFO -- : [f29940f4-a467-4166-abd9-b356a62e359c]   Rendering devise/sessions/new.html.erb within layouts/application
+I, [2017-08-25T17:24:15.193894 #12564]  INFO -- : [f29940f4-a467-4166-abd9-b356a62e359c]   Rendered devise/shared/_links.html.erb (0.5ms) [cache miss]
+I, [2017-08-25T17:24:15.194009 #12564]  INFO -- : [f29940f4-a467-4166-abd9-b356a62e359c]   Rendered devise/sessions/new.html.erb within layouts/application (2.3ms)
+I, [2017-08-25T17:24:15.194849 #12564]  INFO -- : [f29940f4-a467-4166-abd9-b356a62e359c]   Rendered layouts/_header.html.erb (0.2ms) [cache miss]
+I, [2017-08-25T17:24:15.195112 #12564]  INFO -- : [f29940f4-a467-4166-abd9-b356a62e359c] Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 0.0ms)
+I, [2017-08-25T17:24:23.236226 #12564]  INFO -- : [19015d2b-0398-47b2-b392-d796ac5e8f93] Started POST "/users/sign_in" for 127.0.0.1 at 2017-08-25 17:24:23 +0530
+I, [2017-08-25T17:24:23.236901 #12564]  INFO -- : [19015d2b-0398-47b2-b392-d796ac5e8f93] Processing by Devise::SessionsController#create as HTML
+I, [2017-08-25T17:24:23.236991 #12564]  INFO -- : [19015d2b-0398-47b2-b392-d796ac5e8f93]   Parameters: {"utf8"=>"✓", "authenticity_token"=>"37peGVOJR9UUDataemAnn97FvLY8pOLE/sjsJyDhbJ+O+7InYLfbLDvP3o1KITg36TR9wtrrz8yzEdYtB1GnRg==", "user"=>{"email"=>"umang.naik98@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+D, [2017-08-25T17:24:23.240391 #12564] DEBUG -- : [19015d2b-0398-47b2-b392-d796ac5e8f93]   [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "umang.naik98@gmail.com"], ["LIMIT", 1]]
+D, [2017-08-25T17:24:23.370974 #12564] DEBUG -- : [19015d2b-0398-47b2-b392-d796ac5e8f93]   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2017-08-25T17:24:23.372125 #12564] DEBUG -- : [19015d2b-0398-47b2-b392-d796ac5e8f93]   [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+I, [2017-08-25T17:24:23.372438 #12564]  INFO -- : [19015d2b-0398-47b2-b392-d796ac5e8f93] Completed 401 Unauthorized in 135ms (ActiveRecord: 1.4ms)
+I, [2017-08-25T17:24:23.375626 #12564]  INFO -- : [2f4e9d22-7738-4285-b582-f75252a8b215] Started GET "/users/sign_in" for 127.0.0.1 at 2017-08-25 17:24:23 +0530
+I, [2017-08-25T17:24:23.376237 #12564]  INFO -- : [2f4e9d22-7738-4285-b582-f75252a8b215] Processing by Devise::SessionsController#new as HTML
+I, [2017-08-25T17:24:23.377442 #12564]  INFO -- : [2f4e9d22-7738-4285-b582-f75252a8b215]   Rendering devise/sessions/new.html.erb within layouts/application
+I, [2017-08-25T17:24:23.379495 #12564]  INFO -- : [2f4e9d22-7738-4285-b582-f75252a8b215]   Rendered devise/shared/_links.html.erb (0.4ms) [cache miss]
+I, [2017-08-25T17:24:23.379584 #12564]  INFO -- : [2f4e9d22-7738-4285-b582-f75252a8b215]   Rendered devise/sessions/new.html.erb within layouts/application (2.1ms)
+I, [2017-08-25T17:24:23.380269 #12564]  INFO -- : [2f4e9d22-7738-4285-b582-f75252a8b215]   Rendered layouts/_header.html.erb (0.1ms) [cache miss]
+I, [2017-08-25T17:24:23.380557 #12564]  INFO -- : [2f4e9d22-7738-4285-b582-f75252a8b215] Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.0ms)
+I, [2017-08-25T17:24:38.676488 #12564]  INFO -- : [7742048e-35e5-4c0d-8988-cb9ab60ec710] Started GET "/users/sign_in" for 127.0.0.1 at 2017-08-25 17:24:38 +0530
+I, [2017-08-25T17:24:38.677151 #12564]  INFO -- : [7742048e-35e5-4c0d-8988-cb9ab60ec710] Processing by Devise::SessionsController#new as HTML
+I, [2017-08-25T17:24:38.678538 #12564]  INFO -- : [7742048e-35e5-4c0d-8988-cb9ab60ec710]   Rendering devise/sessions/new.html.erb within layouts/application
+I, [2017-08-25T17:24:38.680583 #12564]  INFO -- : [7742048e-35e5-4c0d-8988-cb9ab60ec710]   Rendered devise/shared/_links.html.erb (0.4ms) [cache miss]
+I, [2017-08-25T17:24:38.680673 #12564]  INFO -- : [7742048e-35e5-4c0d-8988-cb9ab60ec710]   Rendered devise/sessions/new.html.erb within layouts/application (2.1ms)
+I, [2017-08-25T17:24:38.681350 #12564]  INFO -- : [7742048e-35e5-4c0d-8988-cb9ab60ec710]   Rendered layouts/_header.html.erb (0.2ms) [cache miss]
+I, [2017-08-25T17:24:38.681590 #12564]  INFO -- : [7742048e-35e5-4c0d-8988-cb9ab60ec710] Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.0ms)
+I, [2017-08-25T17:25:33.320288 #12564]  INFO -- : [dcd8b87d-29d2-41e4-94fb-2b9154d68f1b] Started GET "//users/confirmation?confirmation_token=GE9dwkyCy71p5xzchfFQ" for 127.0.0.1 at 2017-08-25 17:25:33 +0530
+I, [2017-08-25T17:25:33.321038 #12564]  INFO -- : [dcd8b87d-29d2-41e4-94fb-2b9154d68f1b] Processing by Devise::ConfirmationsController#show as HTML
+I, [2017-08-25T17:25:33.321097 #12564]  INFO -- : [dcd8b87d-29d2-41e4-94fb-2b9154d68f1b]   Parameters: {"confirmation_token"=>"GE9dwkyCy71p5xzchfFQ"}
+D, [2017-08-25T17:25:33.322901 #12564] DEBUG -- : [dcd8b87d-29d2-41e4-94fb-2b9154d68f1b]   [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."confirmation_token" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["confirmation_token", "GE9dwkyCy71p5xzchfFQ"], ["LIMIT", 1]]
+D, [2017-08-25T17:25:33.323673 #12564] DEBUG -- : [dcd8b87d-29d2-41e4-94fb-2b9154d68f1b]   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2017-08-25T17:25:33.325144 #12564] DEBUG -- : [dcd8b87d-29d2-41e4-94fb-2b9154d68f1b]   [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "users" SET "confirmed_at" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["confirmed_at", "2017-08-25 11:55:33.323419"], ["updated_at", "2017-08-25 11:55:33.323911"], ["id", 1]]
+D, [2017-08-25T17:25:33.366684 #12564] DEBUG -- : [dcd8b87d-29d2-41e4-94fb-2b9154d68f1b]   [1m[35m (41.0ms)[0m  [1m[35mCOMMIT[0m
+I, [2017-08-25T17:25:33.367458 #12564]  INFO -- : [dcd8b87d-29d2-41e4-94fb-2b9154d68f1b] Redirected to http://0.0.0.0:3000/users/sign_in
+I, [2017-08-25T17:25:33.367587 #12564]  INFO -- : [dcd8b87d-29d2-41e4-94fb-2b9154d68f1b] Completed 302 Found in 46ms (ActiveRecord: 41.9ms)
+I, [2017-08-25T17:25:33.370679 #12564]  INFO -- : [bcbb264c-0f90-4ec4-b9d0-8b06abc43fb6] Started GET "/users/sign_in" for 127.0.0.1 at 2017-08-25 17:25:33 +0530
+I, [2017-08-25T17:25:33.371348 #12564]  INFO -- : [bcbb264c-0f90-4ec4-b9d0-8b06abc43fb6] Processing by Devise::SessionsController#new as HTML
+I, [2017-08-25T17:25:33.372648 #12564]  INFO -- : [bcbb264c-0f90-4ec4-b9d0-8b06abc43fb6]   Rendering devise/sessions/new.html.erb within layouts/application
+I, [2017-08-25T17:25:33.374804 #12564]  INFO -- : [bcbb264c-0f90-4ec4-b9d0-8b06abc43fb6]   Rendered devise/shared/_links.html.erb (0.4ms) [cache miss]
+I, [2017-08-25T17:25:33.374889 #12564]  INFO -- : [bcbb264c-0f90-4ec4-b9d0-8b06abc43fb6]   Rendered devise/sessions/new.html.erb within layouts/application (2.2ms)
+I, [2017-08-25T17:25:33.375553 #12564]  INFO -- : [bcbb264c-0f90-4ec4-b9d0-8b06abc43fb6]   Rendered layouts/_header.html.erb (0.2ms) [cache miss]
+I, [2017-08-25T17:25:33.375841 #12564]  INFO -- : [bcbb264c-0f90-4ec4-b9d0-8b06abc43fb6] Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.0ms)
+I, [2017-08-25T17:25:43.037942 #12564]  INFO -- : [7175f8ae-b374-4e0a-aeeb-20f6cf707744] Started POST "/users/sign_in" for 127.0.0.1 at 2017-08-25 17:25:43 +0530
+I, [2017-08-25T17:25:43.038677 #12564]  INFO -- : [7175f8ae-b374-4e0a-aeeb-20f6cf707744] Processing by Devise::SessionsController#create as HTML
+I, [2017-08-25T17:25:43.038792 #12564]  INFO -- : [7175f8ae-b374-4e0a-aeeb-20f6cf707744]   Parameters: {"utf8"=>"✓", "authenticity_token"=>"cmWT75lpP8G+VodPY8HUbDU5j/lGlZaencaON4e2t48jJH/RqlejOJGU8phTgMvEAshOjaDau5bQH7Q9oAZ8Vg==", "user"=>{"email"=>"umang.naik98@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+D, [2017-08-25T17:25:43.040637 #12564] DEBUG -- : [7175f8ae-b374-4e0a-aeeb-20f6cf707744]   [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "umang.naik98@gmail.com"], ["LIMIT", 1]]
+D, [2017-08-25T17:25:43.172312 #12564] DEBUG -- : [7175f8ae-b374-4e0a-aeeb-20f6cf707744]   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2017-08-25T17:25:43.174135 #12564] DEBUG -- : [7175f8ae-b374-4e0a-aeeb-20f6cf707744]   [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "last_sign_in_at" = $2, "current_sign_in_ip" = $3, "last_sign_in_ip" = $4, "sign_in_count" = $5, "updated_at" = $6 WHERE "users"."id" = $7[0m  [["current_sign_in_at", "2017-08-25 11:55:43.171885"], ["last_sign_in_at", "2017-08-25 11:55:43.171885"], ["current_sign_in_ip", "127.0.0.1/32"], ["last_sign_in_ip", "127.0.0.1/32"], ["sign_in_count", 1], ["updated_at", "2017-08-25 11:55:43.172701"], ["id", 1]]
+D, [2017-08-25T17:25:43.174942 #12564] DEBUG -- : [7175f8ae-b374-4e0a-aeeb-20f6cf707744]   [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+I, [2017-08-25T17:25:43.178692 #12564]  INFO -- : [7175f8ae-b374-4e0a-aeeb-20f6cf707744] Redirected to http://0.0.0.0:3000/pages/index
+I, [2017-08-25T17:25:43.178939 #12564]  INFO -- : [7175f8ae-b374-4e0a-aeeb-20f6cf707744] Completed 302 Found in 140ms (ActiveRecord: 1.2ms)
+I, [2017-08-25T17:25:43.181733 #12564]  INFO -- : [cdf16219-eba0-413b-b8f7-489bfa7ebf5f] Started GET "/pages/index" for 127.0.0.1 at 2017-08-25 17:25:43 +0530
+I, [2017-08-25T17:25:43.182437 #12564]  INFO -- : [cdf16219-eba0-413b-b8f7-489bfa7ebf5f] Processing by PagesController#index as HTML
+D, [2017-08-25T17:25:43.184325 #12564] DEBUG -- : [cdf16219-eba0-413b-b8f7-489bfa7ebf5f]   [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+I, [2017-08-25T17:25:43.185593 #12564]  INFO -- : [cdf16219-eba0-413b-b8f7-489bfa7ebf5f]   Rendering pages/index.html.erb within layouts/application
+D, [2017-08-25T17:25:43.186614 #12564] DEBUG -- : [cdf16219-eba0-413b-b8f7-489bfa7ebf5f]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT $1 OFFSET $2[0m  [["LIMIT", 5], ["OFFSET", 0]]
+I, [2017-08-25T17:25:43.189443 #12564]  INFO -- : [cdf16219-eba0-413b-b8f7-489bfa7ebf5f]   Rendered pages/_index.html.erb (0.6ms) [cache miss]
+I, [2017-08-25T17:25:43.189576 #12564]  INFO -- : [cdf16219-eba0-413b-b8f7-489bfa7ebf5f]   Rendered pages/index.html.erb within layouts/application (3.9ms)
+I, [2017-08-25T17:25:43.190427 #12564]  INFO -- : [cdf16219-eba0-413b-b8f7-489bfa7ebf5f]   Rendered layouts/_header.html.erb (0.2ms) [cache miss]
+I, [2017-08-25T17:25:43.190777 #12564]  INFO -- : [cdf16219-eba0-413b-b8f7-489bfa7ebf5f] Completed 200 OK in 8ms (Views: 5.1ms | ActiveRecord: 0.9ms)
+I, [2017-08-25T17:25:43.263854 #12564]  INFO -- : [b83a8843-a50a-471a-b3c0-896ef0b76100] Started GET "/pages/images/ico/favicon.ico" for 127.0.0.1 at 2017-08-25 17:25:43 +0530
+F, [2017-08-25T17:25:43.265018 #12564] FATAL -- : [b83a8843-a50a-471a-b3c0-896ef0b76100]   
+F, [2017-08-25T17:25:43.265107 #12564] FATAL -- : [b83a8843-a50a-471a-b3c0-896ef0b76100] ActionController::RoutingError (No route matches [GET] "/pages/images/ico/favicon.ico"):
+F, [2017-08-25T17:25:43.265152 #12564] FATAL -- : [b83a8843-a50a-471a-b3c0-896ef0b76100]   
+F, [2017-08-25T17:25:43.265205 #12564] FATAL -- : [b83a8843-a50a-471a-b3c0-896ef0b76100] actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+[b83a8843-a50a-471a-b3c0-896ef0b76100] actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+[b83a8843-a50a-471a-b3c0-896ef0b76100] railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+[b83a8843-a50a-471a-b3c0-896ef0b76100] railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+[b83a8843-a50a-471a-b3c0-896ef0b76100] activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+[b83a8843-a50a-471a-b3c0-896ef0b76100] activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+[b83a8843-a50a-471a-b3c0-896ef0b76100] activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+[b83a8843-a50a-471a-b3c0-896ef0b76100] railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+[b83a8843-a50a-471a-b3c0-896ef0b76100] actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+[b83a8843-a50a-471a-b3c0-896ef0b76100] actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+[b83a8843-a50a-471a-b3c0-896ef0b76100] rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+[b83a8843-a50a-471a-b3c0-896ef0b76100] rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+[b83a8843-a50a-471a-b3c0-896ef0b76100] activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+[b83a8843-a50a-471a-b3c0-896ef0b76100] actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+[b83a8843-a50a-471a-b3c0-896ef0b76100] actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+[b83a8843-a50a-471a-b3c0-896ef0b76100] rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+[b83a8843-a50a-471a-b3c0-896ef0b76100] railties (5.1.1) lib/rails/engine.rb:522:in `call'
+[b83a8843-a50a-471a-b3c0-896ef0b76100] puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+[b83a8843-a50a-471a-b3c0-896ef0b76100] puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+[b83a8843-a50a-471a-b3c0-896ef0b76100] puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+[b83a8843-a50a-471a-b3c0-896ef0b76100] puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+[b83a8843-a50a-471a-b3c0-896ef0b76100] puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+I, [2017-08-25T17:25:56.308690 #12564]  INFO -- : [b742b507-184f-44bb-9d6b-71d4bafb8b9b] Started GET "/users/edit" for 127.0.0.1 at 2017-08-25 17:25:56 +0530
+I, [2017-08-25T17:25:56.309815 #12564]  INFO -- : [b742b507-184f-44bb-9d6b-71d4bafb8b9b] Processing by Devise::RegistrationsController#edit as HTML
+D, [2017-08-25T17:25:56.311323 #12564] DEBUG -- : [b742b507-184f-44bb-9d6b-71d4bafb8b9b]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+I, [2017-08-25T17:25:56.319114 #12564]  INFO -- : [b742b507-184f-44bb-9d6b-71d4bafb8b9b]   Rendering devise/registrations/edit.html.erb within layouts/application
+I, [2017-08-25T17:25:56.324466 #12564]  INFO -- : [b742b507-184f-44bb-9d6b-71d4bafb8b9b]   Rendered devise/registrations/edit.html.erb within layouts/application (5.2ms)
+I, [2017-08-25T17:25:56.325185 #12564]  INFO -- : [b742b507-184f-44bb-9d6b-71d4bafb8b9b]   Rendered layouts/_header.html.erb (0.2ms) [cache miss]
+I, [2017-08-25T17:25:56.325441 #12564]  INFO -- : [b742b507-184f-44bb-9d6b-71d4bafb8b9b] Completed 200 OK in 16ms (Views: 13.3ms | ActiveRecord: 0.3ms)
+I, [2017-08-25T17:25:59.515886 #12564]  INFO -- : [4495dcd6-dcb4-4eb2-8ba9-bb908a39f257] Started GET "/prodacts" for 127.0.0.1 at 2017-08-25 17:25:59 +0530
+I, [2017-08-25T17:25:59.517391 #12564]  INFO -- : [4495dcd6-dcb4-4eb2-8ba9-bb908a39f257] Processing by ProdactsController#index as HTML
+D, [2017-08-25T17:25:59.520485 #12564] DEBUG -- : [4495dcd6-dcb4-4eb2-8ba9-bb908a39f257]   [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+I, [2017-08-25T17:25:59.528641 #12564]  INFO -- : [4495dcd6-dcb4-4eb2-8ba9-bb908a39f257]   Rendering prodacts/index.html.erb within layouts/application
+D, [2017-08-25T17:25:59.530835 #12564] DEBUG -- : [4495dcd6-dcb4-4eb2-8ba9-bb908a39f257]   [1m[36mProdact Load (0.4ms)[0m  [1m[34mSELECT  "prodacts".* FROM "prodacts" LIMIT $1 OFFSET $2[0m  [["LIMIT", 5], ["OFFSET", 0]]
+I, [2017-08-25T17:25:59.531359 #12564]  INFO -- : [4495dcd6-dcb4-4eb2-8ba9-bb908a39f257]   Rendered prodacts/index.html.erb within layouts/application (2.6ms)
+I, [2017-08-25T17:25:59.532164 #12564]  INFO -- : [4495dcd6-dcb4-4eb2-8ba9-bb908a39f257]   Rendered layouts/_header.html.erb (0.2ms) [cache miss]
+I, [2017-08-25T17:25:59.532517 #12564]  INFO -- : [4495dcd6-dcb4-4eb2-8ba9-bb908a39f257] Completed 200 OK in 15ms (Views: 6.2ms | ActiveRecord: 2.6ms)
+I, [2017-08-25T17:26:01.061387 #12564]  INFO -- : [252ed6a3-a083-4c0b-80a3-673cda7ff322] Started GET "/prodacts/new" for 127.0.0.1 at 2017-08-25 17:26:01 +0530
+I, [2017-08-25T17:26:01.062181 #12564]  INFO -- : [252ed6a3-a083-4c0b-80a3-673cda7ff322] Processing by ProdactsController#new as HTML
+D, [2017-08-25T17:26:01.063684 #12564] DEBUG -- : [252ed6a3-a083-4c0b-80a3-673cda7ff322]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+I, [2017-08-25T17:26:01.076707 #12564]  INFO -- : [252ed6a3-a083-4c0b-80a3-673cda7ff322]   Rendering prodacts/new.html.erb within layouts/application
+I, [2017-08-25T17:26:01.081695 #12564]  INFO -- : [252ed6a3-a083-4c0b-80a3-673cda7ff322]   Rendered prodacts/_form.html.erb (2.9ms) [cache miss]
+I, [2017-08-25T17:26:01.081880 #12564]  INFO -- : [252ed6a3-a083-4c0b-80a3-673cda7ff322]   Rendered prodacts/new.html.erb within layouts/application (5.1ms)
+I, [2017-08-25T17:26:01.082806 #12564]  INFO -- : [252ed6a3-a083-4c0b-80a3-673cda7ff322]   Rendered layouts/_header.html.erb (0.2ms) [cache miss]
+I, [2017-08-25T17:26:01.083123 #12564]  INFO -- : [252ed6a3-a083-4c0b-80a3-673cda7ff322] Completed 200 OK in 21ms (Views: 6.6ms | ActiveRecord: 1.5ms)
+I, [2017-08-25T17:26:01.146237 #12564]  INFO -- : [30223da1-3787-48bc-ae3e-5a945ac1cd10] Started GET "/prodacts/images/ico/favicon.ico" for 127.0.0.1 at 2017-08-25 17:26:01 +0530
+F, [2017-08-25T17:26:01.148130 #12564] FATAL -- : [30223da1-3787-48bc-ae3e-5a945ac1cd10]   
+F, [2017-08-25T17:26:01.148221 #12564] FATAL -- : [30223da1-3787-48bc-ae3e-5a945ac1cd10] ActionController::RoutingError (No route matches [GET] "/prodacts/images/ico/favicon.ico"):
+F, [2017-08-25T17:26:01.148263 #12564] FATAL -- : [30223da1-3787-48bc-ae3e-5a945ac1cd10]   
+F, [2017-08-25T17:26:01.148343 #12564] FATAL -- : [30223da1-3787-48bc-ae3e-5a945ac1cd10] actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+[30223da1-3787-48bc-ae3e-5a945ac1cd10] actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+[30223da1-3787-48bc-ae3e-5a945ac1cd10] railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+[30223da1-3787-48bc-ae3e-5a945ac1cd10] railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+[30223da1-3787-48bc-ae3e-5a945ac1cd10] activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+[30223da1-3787-48bc-ae3e-5a945ac1cd10] activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+[30223da1-3787-48bc-ae3e-5a945ac1cd10] activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+[30223da1-3787-48bc-ae3e-5a945ac1cd10] railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+[30223da1-3787-48bc-ae3e-5a945ac1cd10] actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+[30223da1-3787-48bc-ae3e-5a945ac1cd10] actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+[30223da1-3787-48bc-ae3e-5a945ac1cd10] rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+[30223da1-3787-48bc-ae3e-5a945ac1cd10] rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+[30223da1-3787-48bc-ae3e-5a945ac1cd10] activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+[30223da1-3787-48bc-ae3e-5a945ac1cd10] actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+[30223da1-3787-48bc-ae3e-5a945ac1cd10] actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+[30223da1-3787-48bc-ae3e-5a945ac1cd10] rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+[30223da1-3787-48bc-ae3e-5a945ac1cd10] railties (5.1.1) lib/rails/engine.rb:522:in `call'
+[30223da1-3787-48bc-ae3e-5a945ac1cd10] puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+[30223da1-3787-48bc-ae3e-5a945ac1cd10] puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+[30223da1-3787-48bc-ae3e-5a945ac1cd10] puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+[30223da1-3787-48bc-ae3e-5a945ac1cd10] puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+[30223da1-3787-48bc-ae3e-5a945ac1cd10] puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+I, [2017-08-25T17:26:14.483351 #12564]  INFO -- : [74cf4507-cf91-4775-9cf1-73fa030f465e] Started POST "/prodacts" for 127.0.0.1 at 2017-08-25 17:26:14 +0530
+I, [2017-08-25T17:26:14.484480 #12564]  INFO -- : [74cf4507-cf91-4775-9cf1-73fa030f465e] Processing by ProdactsController#create as HTML
+I, [2017-08-25T17:26:14.484615 #12564]  INFO -- : [74cf4507-cf91-4775-9cf1-73fa030f465e]   Parameters: {"utf8"=>"✓", "authenticity_token"=>"WuBfMMVauT2OpUN0Mv/yUgjcC0JzM8xINRBrRuomgWj4c8cFhPPrtJKlm5TqtinGgI5i69IKfwBZfd1ujUAQTw==", "prodact"=>{"name"=>"a", "decription"=>"hiii", "price"=>"1234", "quantity"=>"12"}, "commit"=>"create product"}
+D, [2017-08-25T17:26:14.487260 #12564] DEBUG -- : [74cf4507-cf91-4775-9cf1-73fa030f465e]   [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2017-08-25T17:26:14.489266 #12564] DEBUG -- : [74cf4507-cf91-4775-9cf1-73fa030f465e]   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2017-08-25T17:26:14.491070 #12564] DEBUG -- : [74cf4507-cf91-4775-9cf1-73fa030f465e]   [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "prodacts" ("name", "decription", "price", "quantity", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "a"], ["decription", "hiii"], ["price", "1234.0"], ["quantity", 12], ["created_at", "2017-08-25 11:56:14.489628"], ["updated_at", "2017-08-25 11:56:14.489628"]]
+D, [2017-08-25T17:26:14.531972 #12564] DEBUG -- : [74cf4507-cf91-4775-9cf1-73fa030f465e]   [1m[35m (40.5ms)[0m  [1m[35mCOMMIT[0m
+I, [2017-08-25T17:26:14.532841 #12564]  INFO -- : [74cf4507-cf91-4775-9cf1-73fa030f465e] Redirected to http://0.0.0.0:3000/prodacts/1
+I, [2017-08-25T17:26:14.533031 #12564]  INFO -- : [74cf4507-cf91-4775-9cf1-73fa030f465e] Completed 302 Found in 48ms (ActiveRecord: 41.8ms)
+I, [2017-08-25T17:26:14.535849 #12564]  INFO -- : [9e5ce692-fd7e-45bb-b24f-b042e337c79f] Started GET "/prodacts/1" for 127.0.0.1 at 2017-08-25 17:26:14 +0530
+I, [2017-08-25T17:26:14.536442 #12564]  INFO -- : [9e5ce692-fd7e-45bb-b24f-b042e337c79f] Processing by ProdactsController#show as HTML
+I, [2017-08-25T17:26:14.536491 #12564]  INFO -- : [9e5ce692-fd7e-45bb-b24f-b042e337c79f]   Parameters: {"id"=>"1"}
+D, [2017-08-25T17:26:14.537887 #12564] DEBUG -- : [9e5ce692-fd7e-45bb-b24f-b042e337c79f]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2017-08-25T17:26:14.547930 #12564] DEBUG -- : [9e5ce692-fd7e-45bb-b24f-b042e337c79f]   [1m[36mProdact Load (0.2ms)[0m  [1m[34mSELECT  "prodacts".* FROM "prodacts" WHERE "prodacts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+I, [2017-08-25T17:26:14.550237 #12564]  INFO -- : [9e5ce692-fd7e-45bb-b24f-b042e337c79f]   Rendering prodacts/show.html.erb within layouts/application
+I, [2017-08-25T17:26:14.551250 #12564]  INFO -- : [9e5ce692-fd7e-45bb-b24f-b042e337c79f]   Rendered prodacts/show.html.erb within layouts/application (0.9ms)
+I, [2017-08-25T17:26:14.552028 #12564]  INFO -- : [9e5ce692-fd7e-45bb-b24f-b042e337c79f]   Rendered layouts/_header.html.erb (0.2ms) [cache miss]
+I, [2017-08-25T17:26:14.552284 #12564]  INFO -- : [9e5ce692-fd7e-45bb-b24f-b042e337c79f] Completed 200 OK in 16ms (Views: 2.3ms | ActiveRecord: 0.7ms)
+I, [2017-08-25T17:26:16.254159 #12564]  INFO -- : [289e5db5-d4e7-4117-8fc3-d887306819b6] Started GET "/prodacts" for 127.0.0.1 at 2017-08-25 17:26:16 +0530
+I, [2017-08-25T17:26:16.255040 #12564]  INFO -- : [289e5db5-d4e7-4117-8fc3-d887306819b6] Processing by ProdactsController#index as HTML
+D, [2017-08-25T17:26:16.256665 #12564] DEBUG -- : [289e5db5-d4e7-4117-8fc3-d887306819b6]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+I, [2017-08-25T17:26:16.257983 #12564]  INFO -- : [289e5db5-d4e7-4117-8fc3-d887306819b6]   Rendering prodacts/index.html.erb within layouts/application
+D, [2017-08-25T17:26:16.258888 #12564] DEBUG -- : [289e5db5-d4e7-4117-8fc3-d887306819b6]   [1m[36mProdact Load (0.3ms)[0m  [1m[34mSELECT  "prodacts".* FROM "prodacts" LIMIT $1 OFFSET $2[0m  [["LIMIT", 5], ["OFFSET", 0]]
+I, [2017-08-25T17:26:16.261309 #12564]  INFO -- : [289e5db5-d4e7-4117-8fc3-d887306819b6]   Rendered prodacts/_index.html.erb (0.7ms) [cache miss]
+I, [2017-08-25T17:26:16.261954 #12564]  INFO -- : [289e5db5-d4e7-4117-8fc3-d887306819b6]   Rendered prodacts/index.html.erb within layouts/application (3.8ms)
+I, [2017-08-25T17:26:16.262592 #12564]  INFO -- : [289e5db5-d4e7-4117-8fc3-d887306819b6]   Rendered layouts/_header.html.erb (0.1ms) [cache miss]
+I, [2017-08-25T17:26:16.262853 #12564]  INFO -- : [289e5db5-d4e7-4117-8fc3-d887306819b6] Completed 200 OK in 8ms (Views: 4.7ms | ActiveRecord: 0.6ms)
+I, [2017-08-25T17:26:21.890478 #12564]  INFO -- : [cb5ced45-0e06-4bd1-bed5-d9029850fb1e] Started DELETE "/users/sign_out" for 127.0.0.1 at 2017-08-25 17:26:21 +0530
+I, [2017-08-25T17:26:21.891230 #12564]  INFO -- : [cb5ced45-0e06-4bd1-bed5-d9029850fb1e] Processing by Devise::SessionsController#destroy as HTML
+I, [2017-08-25T17:26:21.891293 #12564]  INFO -- : [cb5ced45-0e06-4bd1-bed5-d9029850fb1e]   Parameters: {"authenticity_token"=>"0yzw0Ay0Ifzaf6nzVnI1T8Ke1eMKIypJuh3LdZLm7G1xv2jlTR1zdcZ/cROOO+7bSsy8SqsamQHWcH1d9YB9Sg=="}
+D, [2017-08-25T17:26:21.892799 #12564] DEBUG -- : [cb5ced45-0e06-4bd1-bed5-d9029850fb1e]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2017-08-25T17:26:21.893817 #12564] DEBUG -- : [cb5ced45-0e06-4bd1-bed5-d9029850fb1e]   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2017-08-25T17:26:21.894889 #12564] DEBUG -- : [cb5ced45-0e06-4bd1-bed5-d9029850fb1e]   [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+I, [2017-08-25T17:26:21.895570 #12564]  INFO -- : [cb5ced45-0e06-4bd1-bed5-d9029850fb1e] Redirected to http://0.0.0.0:3000/
+I, [2017-08-25T17:26:21.895698 #12564]  INFO -- : [cb5ced45-0e06-4bd1-bed5-d9029850fb1e] Completed 302 Found in 4ms (ActiveRecord: 0.5ms)
+I, [2017-08-25T17:26:21.898437 #12564]  INFO -- : [4b6d7a09-5ea6-44c1-b4bf-616f9c16d869] Started GET "/" for 127.0.0.1 at 2017-08-25 17:26:21 +0530
+I, [2017-08-25T17:26:21.899726 #12564]  INFO -- : [4b6d7a09-5ea6-44c1-b4bf-616f9c16d869] Processing by PagesController#index as HTML
+I, [2017-08-25T17:26:21.901461 #12564]  INFO -- : [4b6d7a09-5ea6-44c1-b4bf-616f9c16d869]   Rendering pages/index.html.erb within layouts/application
+I, [2017-08-25T17:26:21.902265 #12564]  INFO -- : [4b6d7a09-5ea6-44c1-b4bf-616f9c16d869]   Rendered pages/index.html.erb within layouts/application (0.5ms)
+I, [2017-08-25T17:26:21.904089 #12564]  INFO -- : [4b6d7a09-5ea6-44c1-b4bf-616f9c16d869]   Rendered layouts/_header.html.erb (0.4ms) [cache miss]
+I, [2017-08-25T17:26:21.904562 #12564]  INFO -- : [4b6d7a09-5ea6-44c1-b4bf-616f9c16d869] Completed 200 OK in 5ms (Views: 3.3ms | ActiveRecord: 0.0ms)
+I, [2017-08-25T17:26:22.731317 #12564]  INFO -- : [8b811dc4-5f05-48c1-ac01-bb82fcab918e] Started GET "/users/sign_in" for 127.0.0.1 at 2017-08-25 17:26:22 +0530
+I, [2017-08-25T17:26:22.732349 #12564]  INFO -- : [8b811dc4-5f05-48c1-ac01-bb82fcab918e] Processing by Devise::SessionsController#new as HTML
+I, [2017-08-25T17:26:22.735031 #12564]  INFO -- : [8b811dc4-5f05-48c1-ac01-bb82fcab918e]   Rendering devise/sessions/new.html.erb within layouts/application
+I, [2017-08-25T17:26:22.738252 #12564]  INFO -- : [8b811dc4-5f05-48c1-ac01-bb82fcab918e]   Rendered devise/shared/_links.html.erb (0.5ms) [cache miss]
+I, [2017-08-25T17:26:22.738418 #12564]  INFO -- : [8b811dc4-5f05-48c1-ac01-bb82fcab918e]   Rendered devise/sessions/new.html.erb within layouts/application (3.2ms)
+I, [2017-08-25T17:26:22.739410 #12564]  INFO -- : [8b811dc4-5f05-48c1-ac01-bb82fcab918e]   Rendered layouts/_header.html.erb (0.2ms) [cache miss]
+I, [2017-08-25T17:26:22.739734 #12564]  INFO -- : [8b811dc4-5f05-48c1-ac01-bb82fcab918e] Completed 200 OK in 7ms (Views: 5.3ms | ActiveRecord: 0.0ms)
+I, [2017-08-25T17:26:24.586309 #12564]  INFO -- : [1c55e3cd-4c48-4aae-a7c6-c769376debd9] Started GET "/users/sign_up" for 127.0.0.1 at 2017-08-25 17:26:24 +0530
+I, [2017-08-25T17:26:24.587278 #12564]  INFO -- : [1c55e3cd-4c48-4aae-a7c6-c769376debd9] Processing by Devise::RegistrationsController#new as HTML
+I, [2017-08-25T17:26:24.590099 #12564]  INFO -- : [1c55e3cd-4c48-4aae-a7c6-c769376debd9]   Rendering devise/registrations/new.html.erb within layouts/application
+I, [2017-08-25T17:26:24.593324 #12564]  INFO -- : [1c55e3cd-4c48-4aae-a7c6-c769376debd9]   Rendered devise/shared/_links.html.erb (0.4ms) [cache miss]
+I, [2017-08-25T17:26:24.593438 #12564]  INFO -- : [1c55e3cd-4c48-4aae-a7c6-c769376debd9]   Rendered devise/registrations/new.html.erb within layouts/application (3.3ms)
+I, [2017-08-25T17:26:24.594193 #12564]  INFO -- : [1c55e3cd-4c48-4aae-a7c6-c769376debd9]   Rendered layouts/_header.html.erb (0.2ms) [cache miss]
+I, [2017-08-25T17:26:24.594468 #12564]  INFO -- : [1c55e3cd-4c48-4aae-a7c6-c769376debd9] Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.0ms)
+I, [2017-08-25T17:26:39.477434 #12564]  INFO -- : [768f8276-9076-4f44-bb68-336d342ed7ee] Started POST "/users" for 127.0.0.1 at 2017-08-25 17:26:39 +0530
+I, [2017-08-25T17:26:39.478224 #12564]  INFO -- : [768f8276-9076-4f44-bb68-336d342ed7ee] Processing by Devise::RegistrationsController#create as HTML
+I, [2017-08-25T17:26:39.478317 #12564]  INFO -- : [768f8276-9076-4f44-bb68-336d342ed7ee]   Parameters: {"utf8"=>"✓", "authenticity_token"=>"VQQ9Ad7Yxr6NHnCZkiIO2eWgMF1LFazDwG1NgA6eU8OULm85wQxYvxCciyU+WVEsmB9YrBaVRkoav+ypawK38Q==", "user"=>{"firstname"=>"user", "email"=>"user.app@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "role"=>"user"}, "commit"=>"Sign up"}
+D, [2017-08-25T17:26:39.609644 #12564] DEBUG -- : [768f8276-9076-4f44-bb68-336d342ed7ee]   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2017-08-25T17:26:39.611705 #12564] DEBUG -- : [768f8276-9076-4f44-bb68-336d342ed7ee]   [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "user.app@gmail.com"], ["LIMIT", 1]]
+D, [2017-08-25T17:26:39.612749 #12564] DEBUG -- : [768f8276-9076-4f44-bb68-336d342ed7ee]   [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+I, [2017-08-25T17:26:39.616644 #12564]  INFO -- : [768f8276-9076-4f44-bb68-336d342ed7ee]   Rendering devise/registrations/new.html.erb within layouts/application
+I, [2017-08-25T17:26:39.619870 #12564]  INFO -- : [768f8276-9076-4f44-bb68-336d342ed7ee]   Rendered devise/shared/_links.html.erb (0.4ms) [cache miss]
+I, [2017-08-25T17:26:39.619972 #12564]  INFO -- : [768f8276-9076-4f44-bb68-336d342ed7ee]   Rendered devise/registrations/new.html.erb within layouts/application (3.2ms)
+I, [2017-08-25T17:26:39.620668 #12564]  INFO -- : [768f8276-9076-4f44-bb68-336d342ed7ee]   Rendered layouts/_header.html.erb (0.2ms) [cache miss]
+I, [2017-08-25T17:26:39.620921 #12564]  INFO -- : [768f8276-9076-4f44-bb68-336d342ed7ee] Completed 200 OK in 142ms (Views: 4.4ms | ActiveRecord: 0.6ms)
+I, [2017-08-25T17:26:49.564689 #12564]  INFO -- : [64b346ee-0602-4c2e-a295-183daa3121e8] Started POST "/users" for 127.0.0.1 at 2017-08-25 17:26:49 +0530
+I, [2017-08-25T17:26:49.565801 #12564]  INFO -- : [64b346ee-0602-4c2e-a295-183daa3121e8] Processing by Devise::RegistrationsController#create as HTML
+I, [2017-08-25T17:26:49.565976 #12564]  INFO -- : [64b346ee-0602-4c2e-a295-183daa3121e8]   Parameters: {"utf8"=>"✓", "authenticity_token"=>"tjUujM6nGpnk+lZZ11dBhrKxcSP+YA4lprKxvBCpbbB3H3y00XOEmHl4reV7LB5zzw4Z0qPg5Kx8YBCVdTWJgg==", "user"=>{"firstname"=>"user", "email"=>"user.app@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "role"=>"user"}, "commit"=>"Sign up"}
+D, [2017-08-25T17:26:49.698747 #12564] DEBUG -- : [64b346ee-0602-4c2e-a295-183daa3121e8]   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2017-08-25T17:26:49.699849 #12564] DEBUG -- : [64b346ee-0602-4c2e-a295-183daa3121e8]   [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "user.app@gmail.com"], ["LIMIT", 1]]
+D, [2017-08-25T17:26:49.701284 #12564] DEBUG -- : [64b346ee-0602-4c2e-a295-183daa3121e8]   [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "confirmation_token", "confirmation_sent_at", "created_at", "updated_at", "firstname", "role") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["email", "user.app@gmail.com"], ["encrypted_password", "$2a$11$7GWErAZMLHBSUsNmsB1YQ.1gwcBj1/M5EYAy8mGNXVLbc.ZxnvaOa"], ["confirmation_token", "TCys3acUA_CksLRf_8Ux"], ["confirmation_sent_at", "2017-08-25 11:56:49.700222"], ["created_at", "2017-08-25 11:56:49.700067"], ["updated_at", "2017-08-25 11:56:49.700067"], ["firstname", "user"], ["role", 1]]
+D, [2017-08-25T17:26:49.702051 #12564] DEBUG -- : [64b346ee-0602-4c2e-a295-183daa3121e8]   [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+I, [2017-08-25T17:26:49.703078 #12564]  INFO -- : [64b346ee-0602-4c2e-a295-183daa3121e8]   Rendering devise/mailer/confirmation_instructions.html.erb
+I, [2017-08-25T17:26:49.703416 #12564]  INFO -- : [64b346ee-0602-4c2e-a295-183daa3121e8]   Rendered devise/mailer/confirmation_instructions.html.erb (0.3ms)
+D, [2017-08-25T17:26:49.703825 #12564] DEBUG -- : [64b346ee-0602-4c2e-a295-183daa3121e8] Devise::Mailer#confirmation_instructions: processed outbound mail in 1.4ms
+I, [2017-08-25T17:26:54.475355 #12564]  INFO -- : [64b346ee-0602-4c2e-a295-183daa3121e8] Sent mail to user.app@gmail.com (4771.4ms)
+D, [2017-08-25T17:26:54.475434 #12564] DEBUG -- : [64b346ee-0602-4c2e-a295-183daa3121e8] Date: Fri, 25 Aug 2017 17:26:49 +0530
+From: umang.naik98@gmail.com
+Reply-To: umang.naik98@gmail.com
+To: user.app@gmail.com
+Message-ID: <59a01081ac07c_31143fc2bf137510184ed@C100-10s-iMac.local.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome user.app@gmail.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://locahost:3000/users/confirmation?confirmation_token=TCys3acUA_CksLRf_8Ux">Confirm my account</a></p>
+
+I, [2017-08-25T17:26:54.476751 #12564]  INFO -- : [64b346ee-0602-4c2e-a295-183daa3121e8] Redirected to http://0.0.0.0:3000/
+I, [2017-08-25T17:26:54.476903 #12564]  INFO -- : [64b346ee-0602-4c2e-a295-183daa3121e8] Completed 302 Found in 4911ms (ActiveRecord: 1.1ms)
+I, [2017-08-25T17:26:54.479700 #12564]  INFO -- : [0e7c47ee-a717-401f-9859-9d639d7bc74f] Started GET "/" for 127.0.0.1 at 2017-08-25 17:26:54 +0530
+I, [2017-08-25T17:26:54.480353 #12564]  INFO -- : [0e7c47ee-a717-401f-9859-9d639d7bc74f] Processing by PagesController#index as HTML
+I, [2017-08-25T17:26:54.481522 #12564]  INFO -- : [0e7c47ee-a717-401f-9859-9d639d7bc74f]   Rendering pages/index.html.erb within layouts/application
+I, [2017-08-25T17:26:54.481867 #12564]  INFO -- : [0e7c47ee-a717-401f-9859-9d639d7bc74f]   Rendered pages/index.html.erb within layouts/application (0.3ms)
+I, [2017-08-25T17:26:54.482575 #12564]  INFO -- : [0e7c47ee-a717-401f-9859-9d639d7bc74f]   Rendered layouts/_header.html.erb (0.2ms) [cache miss]
+I, [2017-08-25T17:26:54.482850 #12564]  INFO -- : [0e7c47ee-a717-401f-9859-9d639d7bc74f] Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.0ms)
+I, [2017-08-25T17:27:17.045883 #12564]  INFO -- : [e1cfa9a8-5663-4dde-be2a-19b255dfd012] Started GET "/users/confirmation?confirmation_token=TCys3acUA_CksLRf_8Ux" for 127.0.0.1 at 2017-08-25 17:27:17 +0530
+I, [2017-08-25T17:27:17.047039 #12564]  INFO -- : [e1cfa9a8-5663-4dde-be2a-19b255dfd012] Processing by Devise::ConfirmationsController#show as HTML
+I, [2017-08-25T17:27:17.047166 #12564]  INFO -- : [e1cfa9a8-5663-4dde-be2a-19b255dfd012]   Parameters: {"confirmation_token"=>"TCys3acUA_CksLRf_8Ux"}
+D, [2017-08-25T17:27:17.050275 #12564] DEBUG -- : [e1cfa9a8-5663-4dde-be2a-19b255dfd012]   [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."confirmation_token" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["confirmation_token", "TCys3acUA_CksLRf_8Ux"], ["LIMIT", 1]]
+D, [2017-08-25T17:27:17.051714 #12564] DEBUG -- : [e1cfa9a8-5663-4dde-be2a-19b255dfd012]   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2017-08-25T17:27:17.054346 #12564] DEBUG -- : [e1cfa9a8-5663-4dde-be2a-19b255dfd012]   [1m[35mSQL (0.6ms)[0m  [1m[33mUPDATE "users" SET "confirmed_at" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["confirmed_at", "2017-08-25 11:57:17.051211"], ["updated_at", "2017-08-25 11:57:17.052194"], ["id", 2]]
+D, [2017-08-25T17:27:17.055690 #12564] DEBUG -- : [e1cfa9a8-5663-4dde-be2a-19b255dfd012]   [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+I, [2017-08-25T17:27:17.056553 #12564]  INFO -- : [e1cfa9a8-5663-4dde-be2a-19b255dfd012] Redirected to http://0.0.0.0:3000/users/sign_in
+I, [2017-08-25T17:27:17.056807 #12564]  INFO -- : [e1cfa9a8-5663-4dde-be2a-19b255dfd012] Completed 302 Found in 9ms (ActiveRecord: 1.9ms)
+I, [2017-08-25T17:27:17.062684 #12564]  INFO -- : [9c6f214a-8632-4016-acea-7e478e1beac5] Started GET "/users/sign_in" for 127.0.0.1 at 2017-08-25 17:27:17 +0530
+I, [2017-08-25T17:27:17.063346 #12564]  INFO -- : [9c6f214a-8632-4016-acea-7e478e1beac5] Processing by Devise::SessionsController#new as HTML
+I, [2017-08-25T17:27:17.064725 #12564]  INFO -- : [9c6f214a-8632-4016-acea-7e478e1beac5]   Rendering devise/sessions/new.html.erb within layouts/application
+I, [2017-08-25T17:27:17.066709 #12564]  INFO -- : [9c6f214a-8632-4016-acea-7e478e1beac5]   Rendered devise/shared/_links.html.erb (0.4ms) [cache miss]
+I, [2017-08-25T17:27:17.066790 #12564]  INFO -- : [9c6f214a-8632-4016-acea-7e478e1beac5]   Rendered devise/sessions/new.html.erb within layouts/application (2.0ms)
+I, [2017-08-25T17:27:17.067530 #12564]  INFO -- : [9c6f214a-8632-4016-acea-7e478e1beac5]   Rendered layouts/_header.html.erb (0.2ms) [cache miss]
+I, [2017-08-25T17:27:17.067876 #12564]  INFO -- : [9c6f214a-8632-4016-acea-7e478e1beac5] Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.0ms)
+I, [2017-08-25T17:27:33.169533 #12564]  INFO -- : [4c25f8c9-e240-447c-8eaf-d8ec9579ada2] Started POST "/users/sign_in" for 127.0.0.1 at 2017-08-25 17:27:33 +0530
+I, [2017-08-25T17:27:33.170221 #12564]  INFO -- : [4c25f8c9-e240-447c-8eaf-d8ec9579ada2] Processing by Devise::SessionsController#create as HTML
+I, [2017-08-25T17:27:33.170287 #12564]  INFO -- : [4c25f8c9-e240-447c-8eaf-d8ec9579ada2]   Parameters: {"utf8"=>"✓", "authenticity_token"=>"6JPt738FRbe6PLGnVdHSxKbGnbZWYTRlKbKLzRIaaIQpub/XYNHbtie+Shv5qo0x23n1Rwvh3uzzYCrkd4aMtg==", "user"=>{"email"=>"user.app@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+D, [2017-08-25T17:27:33.172186 #12564] DEBUG -- : [4c25f8c9-e240-447c-8eaf-d8ec9579ada2]   [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "user.app@gmail.com"], ["LIMIT", 1]]
+D, [2017-08-25T17:27:33.302815 #12564] DEBUG -- : [4c25f8c9-e240-447c-8eaf-d8ec9579ada2]   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2017-08-25T17:27:33.304426 #12564] DEBUG -- : [4c25f8c9-e240-447c-8eaf-d8ec9579ada2]   [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "last_sign_in_at" = $2, "current_sign_in_ip" = $3, "last_sign_in_ip" = $4, "sign_in_count" = $5, "updated_at" = $6 WHERE "users"."id" = $7[0m  [["current_sign_in_at", "2017-08-25 11:57:33.302428"], ["last_sign_in_at", "2017-08-25 11:57:33.302428"], ["current_sign_in_ip", "127.0.0.1/32"], ["last_sign_in_ip", "127.0.0.1/32"], ["sign_in_count", 1], ["updated_at", "2017-08-25 11:57:33.303096"], ["id", 2]]
+D, [2017-08-25T17:27:33.305256 #12564] DEBUG -- : [4c25f8c9-e240-447c-8eaf-d8ec9579ada2]   [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+I, [2017-08-25T17:27:33.306146 #12564]  INFO -- : [4c25f8c9-e240-447c-8eaf-d8ec9579ada2] Redirected to http://0.0.0.0:3000/prodacts
+I, [2017-08-25T17:27:33.306314 #12564]  INFO -- : [4c25f8c9-e240-447c-8eaf-d8ec9579ada2] Completed 302 Found in 136ms (ActiveRecord: 1.2ms)
+I, [2017-08-25T17:27:33.308993 #12564]  INFO -- : [9d1f60ff-257f-49ad-ad13-7cffcba76ead] Started GET "/prodacts" for 127.0.0.1 at 2017-08-25 17:27:33 +0530
+I, [2017-08-25T17:27:33.309605 #12564]  INFO -- : [9d1f60ff-257f-49ad-ad13-7cffcba76ead] Processing by ProdactsController#index as HTML
+D, [2017-08-25T17:27:33.311007 #12564] DEBUG -- : [9d1f60ff-257f-49ad-ad13-7cffcba76ead]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+I, [2017-08-25T17:27:33.312369 #12564]  INFO -- : [9d1f60ff-257f-49ad-ad13-7cffcba76ead]   Rendering prodacts/index.html.erb within layouts/application
+D, [2017-08-25T17:27:33.313361 #12564] DEBUG -- : [9d1f60ff-257f-49ad-ad13-7cffcba76ead]   [1m[36mProdact Load (0.3ms)[0m  [1m[34mSELECT  "prodacts".* FROM "prodacts" WHERE "prodacts"."is_active" = $1 LIMIT $2 OFFSET $3[0m  [["is_active", "t"], ["LIMIT", 5], ["OFFSET", 0]]
+I, [2017-08-25T17:27:33.314084 #12564]  INFO -- : [9d1f60ff-257f-49ad-ad13-7cffcba76ead]   Rendered prodacts/index.html.erb within layouts/application (1.6ms)
+I, [2017-08-25T17:27:33.314806 #12564]  INFO -- : [9d1f60ff-257f-49ad-ad13-7cffcba76ead]   Rendered layouts/_header.html.erb (0.1ms) [cache miss]
+I, [2017-08-25T17:27:33.315100 #12564]  INFO -- : [9d1f60ff-257f-49ad-ad13-7cffcba76ead] Completed 200 OK in 5ms (Views: 2.6ms | ActiveRecord: 0.6ms)
+I, [2017-08-25T17:28:45.637084 #12564]  INFO -- : [57a6d677-3f44-450f-bac1-fbdd3a5a5766] Started GET "/prodacts" for 127.0.0.1 at 2017-08-25 17:28:45 +0530
+I, [2017-08-25T17:28:45.637707 #12564]  INFO -- : [57a6d677-3f44-450f-bac1-fbdd3a5a5766] Processing by ProdactsController#index as HTML
+D, [2017-08-25T17:28:45.639393 #12564] DEBUG -- : [57a6d677-3f44-450f-bac1-fbdd3a5a5766]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+I, [2017-08-25T17:28:45.640787 #12564]  INFO -- : [57a6d677-3f44-450f-bac1-fbdd3a5a5766]   Rendering prodacts/index.html.erb within layouts/application
+D, [2017-08-25T17:28:45.641698 #12564] DEBUG -- : [57a6d677-3f44-450f-bac1-fbdd3a5a5766]   [1m[36mProdact Load (0.3ms)[0m  [1m[34mSELECT  "prodacts".* FROM "prodacts" WHERE "prodacts"."is_active" = $1 LIMIT $2 OFFSET $3[0m  [["is_active", "t"], ["LIMIT", 5], ["OFFSET", 0]]
+I, [2017-08-25T17:28:45.642524 #12564]  INFO -- : [57a6d677-3f44-450f-bac1-fbdd3a5a5766]   Rendered prodacts/index.html.erb within layouts/application (1.6ms)
+I, [2017-08-25T17:28:45.643355 #12564]  INFO -- : [57a6d677-3f44-450f-bac1-fbdd3a5a5766]   Rendered layouts/_header.html.erb (0.2ms) [cache miss]
+I, [2017-08-25T17:28:45.643658 #12564]  INFO -- : [57a6d677-3f44-450f-bac1-fbdd3a5a5766] Completed 200 OK in 6ms (Views: 2.8ms | ActiveRecord: 0.6ms)
+D, [2017-08-25T17:30:06.079769 #12733] DEBUG -- :   [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT $1[0m  [["LIMIT", 11]]
+D, [2017-08-25T17:30:26.039698 #12733] DEBUG -- :   [1m[36mProdact Load (0.4ms)[0m  [1m[34mSELECT  "prodacts".* FROM "prodacts" LIMIT $1[0m  [["LIMIT", 11]]
+D, [2017-08-29T09:42:20.846903 #2745] DEBUG -- :   [1m[35m (27.6ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1464569427346199370);[0m
+D, [2017-08-29T09:42:20.947498 #2745] DEBUG -- :   [1m[35m (23.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+I, [2017-08-29T09:42:20.948845 #2745]  INFO -- : Migrating to AddUserToProdacts (20170826040547)
+D, [2017-08-29T09:42:20.950816 #2745] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2017-08-29T09:42:20.997150 #2745] DEBUG -- :   [1m[35m (45.8ms)[0m  [1m[35mALTER TABLE "prodacts" ADD "user_id" bigint[0m
+D, [2017-08-29T09:42:21.019804 #2745] DEBUG -- :   [1m[35m (19.5ms)[0m  [1m[35mCREATE  INDEX  "index_prodacts_on_user_id" ON "prodacts"  ("user_id")[0m
+D, [2017-08-29T09:42:21.026450 #2745] DEBUG -- :   [1m[35m (6.2ms)[0m  [1m[35mALTER TABLE "prodacts" ADD CONSTRAINT "fk_rails_9dfe1046f8"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+[0m
+D, [2017-08-29T09:42:21.029666 #2745] DEBUG -- :   [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170826040547"]]
+D, [2017-08-29T09:42:21.030701 #2745] DEBUG -- :   [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+D, [2017-08-29T09:42:21.049397 #2745] DEBUG -- :   [1m[36mActiveRecord::InternalMetadata Load (15.8ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+D, [2017-08-29T09:42:21.058353 #2745] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+D, [2017-08-29T09:42:21.059150 #2745] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+D, [2017-08-29T09:42:21.059480 #2745] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(1464569427346199370)[0m
+I, [2017-08-29T09:42:33.313244 #2749]  INFO -- : [f23d5b59-ba98-47c6-abf4-01c133d54ceb] Started GET "/" for 127.0.0.1 at 2017-08-29 09:42:33 +0530
+I, [2017-08-29T09:42:33.319569 #2749]  INFO -- : [f23d5b59-ba98-47c6-abf4-01c133d54ceb] Processing by PagesController#index as HTML
+I, [2017-08-29T09:42:33.332363 #2749]  INFO -- : [f23d5b59-ba98-47c6-abf4-01c133d54ceb] Completed 401 Unauthorized in 13ms
+I, [2017-08-29T09:42:33.351483 #2749]  INFO -- : [bf750081-3264-41ac-a520-34d150fa2614] Started GET "/users/sign_in" for 127.0.0.1 at 2017-08-29 09:42:33 +0530
+I, [2017-08-29T09:42:33.352678 #2749]  INFO -- : [bf750081-3264-41ac-a520-34d150fa2614] Processing by Devise::SessionsController#new as HTML
+I, [2017-08-29T09:42:33.414770 #2749]  INFO -- : [bf750081-3264-41ac-a520-34d150fa2614]   Rendering devise/sessions/new.html.erb within layouts/application
+I, [2017-08-29T09:42:33.421065 #2749]  INFO -- : [bf750081-3264-41ac-a520-34d150fa2614]   Rendered devise/shared/_links.html.erb (2.0ms) [cache miss]
+I, [2017-08-29T09:42:33.421161 #2749]  INFO -- : [bf750081-3264-41ac-a520-34d150fa2614]   Rendered devise/sessions/new.html.erb within layouts/application (6.3ms)
+I, [2017-08-29T09:42:33.424660 #2749]  INFO -- : [bf750081-3264-41ac-a520-34d150fa2614]   Rendered layouts/_header.html.erb (0.7ms) [cache miss]
+I, [2017-08-29T09:42:33.424974 #2749]  INFO -- : [bf750081-3264-41ac-a520-34d150fa2614] Completed 200 OK in 72ms (Views: 19.4ms | ActiveRecord: 20.6ms)
+I, [2017-08-29T09:42:33.626783 #2749]  INFO -- : [79f342b8-643b-44c9-ad4c-24b6b40916f5] Started GET "/users/images/ico/favicon.ico" for 127.0.0.1 at 2017-08-29 09:42:33 +0530
+F, [2017-08-29T09:42:33.627606 #2749] FATAL -- : [79f342b8-643b-44c9-ad4c-24b6b40916f5]   
+F, [2017-08-29T09:42:33.627677 #2749] FATAL -- : [79f342b8-643b-44c9-ad4c-24b6b40916f5] ActionController::RoutingError (No route matches [GET] "/users/images/ico/favicon.ico"):
+F, [2017-08-29T09:42:33.627716 #2749] FATAL -- : [79f342b8-643b-44c9-ad4c-24b6b40916f5]   
+F, [2017-08-29T09:42:33.627774 #2749] FATAL -- : [79f342b8-643b-44c9-ad4c-24b6b40916f5] actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+[79f342b8-643b-44c9-ad4c-24b6b40916f5] actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+[79f342b8-643b-44c9-ad4c-24b6b40916f5] railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+[79f342b8-643b-44c9-ad4c-24b6b40916f5] railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+[79f342b8-643b-44c9-ad4c-24b6b40916f5] activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+[79f342b8-643b-44c9-ad4c-24b6b40916f5] activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+[79f342b8-643b-44c9-ad4c-24b6b40916f5] activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+[79f342b8-643b-44c9-ad4c-24b6b40916f5] railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+[79f342b8-643b-44c9-ad4c-24b6b40916f5] actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+[79f342b8-643b-44c9-ad4c-24b6b40916f5] actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+[79f342b8-643b-44c9-ad4c-24b6b40916f5] rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+[79f342b8-643b-44c9-ad4c-24b6b40916f5] rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+[79f342b8-643b-44c9-ad4c-24b6b40916f5] activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+[79f342b8-643b-44c9-ad4c-24b6b40916f5] actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+[79f342b8-643b-44c9-ad4c-24b6b40916f5] actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+[79f342b8-643b-44c9-ad4c-24b6b40916f5] rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+[79f342b8-643b-44c9-ad4c-24b6b40916f5] railties (5.1.1) lib/rails/engine.rb:522:in `call'
+[79f342b8-643b-44c9-ad4c-24b6b40916f5] puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+[79f342b8-643b-44c9-ad4c-24b6b40916f5] puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+[79f342b8-643b-44c9-ad4c-24b6b40916f5] puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+[79f342b8-643b-44c9-ad4c-24b6b40916f5] puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+[79f342b8-643b-44c9-ad4c-24b6b40916f5] puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'

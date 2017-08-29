@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @prodact.name %>
+</p>
+
+<p>
+  <strong>Decription:</strong>
+  <%= @prodact.decription %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @prodact.price %>
+</p>
+
+<p>
+  <strong>Quantity:</strong>
+  <%= @prodact.quantity %>
+</p>
+<% if current_user.role == 'admin' %>
+<%= link_to 'Edit', edit_prodact_path(@prodact) %> |
+<% end %>
+<%= link_to 'Back', prodacts_path %>

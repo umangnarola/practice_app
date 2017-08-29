@@ -1,0 +1,53 @@
+<%if current_user.role == 'admin' %>
+<li><a href="/prodacts/new">Add New Product</a></li>
+<% end %>
+<h1 align="center">Prodacts</h1>
+<table class="table table-striped">
+  <thead >
+    <tr>
+      <th>Name</th>
+      <th>Decription</th>
+      <th>Price</th>
+      <th>Quantity</th>
+      <th>Action</th>
+      <%if current_user.role == 'admin' %>
+      <th>Action</th>
+      <th colspan="5">Action</th>
+      <% end %>
+    </tr>
+  </thead>
+  <% if current_user.role == 'admin' %>
+  <tbody>
+    <% @prodacts_all.each do |prodact| %>
+      <tr>
+        <td><%= prodact.name %></td>
+        <td><%= prodact.decription %></td>
+        <td><%= prodact.price %></td>
+        <td><%= prodact.quantity %></td>
+        <td id='<%= "admin_product_#{prodact.id}" %>'>
+                  <%= render partial: 'prodacts/index', locals: {admin_product: prodact}  %>
+        </td>
+        <td><%= button_to 'Show', prodact, class: 'btn btn btn-success btn-xs',:method => "get" %></td>
+        <td><%= button_to 'Edit', edit_prodact_path(prodact),class: 'btn btn-success btn-xs', :method => "get" %></td>
+        <td><%= button_to 'Destroy', prodact,class: 'btn btn-danger btn-xs', method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+<%= will_paginate @prodacts_all %>
+    <% else %>
+    <tbody>
+      <% @prodacts.each do |prodact| %>
+        <tr>
+          <td><%= prodact.name %></td>
+          <td><%= prodact.decription %></td>
+          <td><%= prodact.price %></td>
+          <td><%= prodact.quantity %></td>
+          <td><%= button_to 'Show', prodact, class: 'btn btn btn-success btn-xs',:method => "get" %></td>
+        </tr>
+      <% end %>
+    </tbody>
+    <%= will_paginate @prodacts %>
+  <% end %>
+</table>
+<br>
+<%= link_to 'Back', pages_index_path %>

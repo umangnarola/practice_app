@@ -1,5 +1,5 @@
 class Prodact < ApplicationRecord
-  validates_presence_of :name,:price
+  validates_presence_of :name,:decription,:price,:quantity
   has_many :order_items
   scope :prodacts, -> {
   where(:is_active =>  true)

@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+</head>
+<body>
+	<section id="cart_items">
+		<div class="container">
+			<div class="table-responsive cart_info">
+				<table class="table table-condensed">
+					<thead>
+						<tr class="cart_menu">
+							<td class="description">Product Name</td>
+							<td class="description">Name</td>
+							<td class="price">Unit Price</td>
+							<td class="quantity">Quantity</td>
+							<td class="total">Total Price</td>
+							<td colspan="3" align="center"> Action</td>
+						</tr>
+					</thead>
+					<tbody>
+            <p class="text-center">
+               <%= link_to "go back", prodacts_path %>
+            </p>
+						<tr>
+              <%= form_for order_item, remote: true do |f| %>
+							<td class="cart_description">
+								<p><%= prodact.name.titleize %></p>
+							</td>
+                  <td class="cart_price">
+                    <p> <span style="color: green"><%= order_item.unit_price %></span></p>
+    							</td>
+                  <td>
+                    <%= f.number_field :quantity, value: order_item.quantity.to_i, class: "form-control", min: 1 %>
+                    <%= f.hidden_field :prodact_id, value: prodact.id %>
+                  </td>
+                  <td>
+                    <span style="color: green"><%=  order_item.total_price %></span>
+                  </td>
+                  <td>
+                      <%= f.submit "Update Quantity", class: "btn btn-primary" %>
+                  </td>
+                  <td>
+                      <%= link_to "Delete Item", order_item, { data: { confirm: "Are you sure you wish to delete the prodact '#{order_item.prodact.name}' from your cart?" }, method: :delete, remote: true, class: "btn btn-danger" } %>
+                  </td>
+              <% end %>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</section>
+
+</body>
+</html>

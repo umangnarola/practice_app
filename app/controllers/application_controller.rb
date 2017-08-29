@@ -1,6 +1,9 @@
 class ApplicationController < ActionController::Base
   before_action :configure_permitted_parameters, if: :devise_controller?
   before_action :authenticate_user!, :current_user
+  helper_method :current_order
+
+
 
   def after_sign_in_path_for(current_user)
    if current_user.role == 'admin'
@@ -20,7 +23,13 @@ class ApplicationController < ActionController::Base
   def new_session_path(scope)
     new_user_session_path
   end
-
+  def current_order
+    if !session[:order_id].nil?
+      Order.find(session[:order_id])
+    else
+      Order.new
+    end
+  end
   def create
     # Create the user from params
     @user = User.new(params[:user])

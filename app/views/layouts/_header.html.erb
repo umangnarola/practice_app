@@ -23,9 +23,12 @@
             <ul class="nav navbar-nav">
                 <% if user_signed_in? %>
               <ul class="nav navbar-nav pull-right">
+                <% if current_user.role == "user" %>
+              <li><a href="/cart"><h1 class="cart-text"><%= render 'layouts/cart_text' %></h1> </a></li>
+              <% end%>
                   <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                      <%= current_user.firstname %>
+                      <%= current_user.firstname.titleize %>
                       <span class="caret"></span>
                     </a>
                     <ul class="dropdown-menu" role="menu">

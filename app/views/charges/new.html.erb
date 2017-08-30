@@ -1,0 +1,22 @@
+<%= form_tag charges_path do %>
+  <article>
+    <% if flash[:error].present? %>
+      <div id="error_explanation">
+        <p><%= flash[:error] %></p>
+      </div>
+    <% end %>
+    <label class="amount">
+      <span><%= current_order.subtotal %></span>
+    </label>
+  </article>
+  <% if current_order.subtotal != 0 %>
+  <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+  data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
+  data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+  data-name="E Fruit Seller"
+  data-description="Monthly Subscription of <%= current_order.subtotal %> Rs"
+  data-panel-label="Pay Rs <%= current_order.subtotal %>"
+  data-allow-remember-me="true">
+  </script>
+<%end %>
+<% end %>

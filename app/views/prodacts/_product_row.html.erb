@@ -5,7 +5,7 @@
     <div class="col-xs-8">
       <h6>Name:<%= prodact.name %></h6>
       <h6>About Product :<%= prodact.decription %></h6>
-      <h6>Availible Quantity :<%= prodact.quantity %></h6>
+      <h6 >Availible Quantity :<span style="color: green"><%= prodact.quantity %></span></h6>
     </div>
     <div class="col-xs-4">
       <%= form_for order_item, remote: true do |f| %>

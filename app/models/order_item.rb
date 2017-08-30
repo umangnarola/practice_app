@@ -1,12 +1,10 @@
 class OrderItem < ApplicationRecord
    belongs_to :prodact
    belongs_to :order
-    validates :quantity, presence: true, numericality: { only_integer: true, greater_than: 0 }
+   validates :quantity, presence: true, numericality: { only_integer: true, greater_than: 0 }
    validate :product_present
    validate :order_present
-  #  belongs_to :prodact, -> { unscope(where: :prodact_id) }
   before_save :finalize
-
   def unit_price
     if persisted?
       self[:unit_price]

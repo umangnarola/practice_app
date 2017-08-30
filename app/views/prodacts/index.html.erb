@@ -1,6 +1,6 @@
 <%if current_user.role == 'admin' %>
-<li><a href="/prodacts/new">Add New Product</a></li>
 <h1 align="center">Products</h1>
+<li><a href="/prodacts/new">Add New Product</a></li>
 <%= link_to 'Back', pages_index_path %>
 <table class="table table-striped">
   <thead >
@@ -14,7 +14,6 @@
       <th colspan="5">Action</th>
     </tr>
   </thead>
-
   <tbody>
     <% @prodacts_all.each do |prodact| %>
     <tr>
@@ -31,7 +30,6 @@
     </tr>
     <% end %>
   </tbody>
-
   <%= will_paginate @prodacts_all %>
   <% else %>
   <tbody>
@@ -40,9 +38,6 @@
     <% end %>
   </tbody>
   <%= will_paginate @prodacts %>
-
 </table>
-
 <br>
-
 <% end %>

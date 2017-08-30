@@ -4,7 +4,6 @@ class PagesController < ApplicationController
   def index
     @users = User.all.paginate :page => params[:page], :per_page => 5
   end
-
   def updateuserstatus
     @user_update = User.find(params[:u_id])
     if @user_update.is_active == true
@@ -16,7 +15,6 @@ class PagesController < ApplicationController
       format.js
     end
   end
-
   def redirect_unless_admin
     unless current_user.role == "admin"
       redirect_to prodacts_path

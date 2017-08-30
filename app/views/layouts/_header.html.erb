@@ -1,22 +1,23 @@
 <header id="header">
-  <div class="header_top">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-6">
-
-        </div>
-
-      </div>
-    </div>
-  </div>
-
   <div class="header-middle">
     <div class="container">
       <div class="row">
         <div class="col-sm-4">
-          <h3>Welcome</h3>
-          <div class="btn-group pull-right">
-          </div>
+          <% if user_signed_in? %>
+          <% if current_user.role == "admin" %>
+          <h3><a href="/" style=" text-decoration: none !important"> Welcome To E-Fruit-Seller</a></h3>
+          <% else%>
+            <h3><a href="/prodacts" style=" text-decoration: none !important"> Welcome To E-Fruit-Seller</a></h3>
+          <%end%>
+          <%end%>
+          <% if user_signed_in? %>
+          <% if current_user.role == "admin" %>
+          <ul class="nav nav-pils">
+              <li ><a href="/">Home</a></li>
+              <li><a href="/prodacts">Manage Product</a></li>
+          </ul>
+          <%end%>
+          <%end%>
         </div>
         <div class="col-sm-8">
           <div class="shop-menu pull-right">
@@ -24,6 +25,7 @@
                 <% if user_signed_in? %>
               <ul class="nav navbar-nav pull-right">
                 <% if current_user.role == "user" %>
+                <li><a href="/charges/new"> Checkout</a></li>
               <li><a href="/cart"><h1 class="cart-text"><%= render 'layouts/cart_text' %></h1> </a></li>
               <% end%>
                   <li class="dropdown">
@@ -37,15 +39,8 @@
                     </ul>
                   </li>
                 <% else %>
-                  <%= link_to new_user_session_path, class: "btn btn-default" do %>
-   Login &nbsp;
-<% end %>
-<!-- <%#= link_to new_user_registration_path, class: "btn btn-default" do %>
- Sign Up
-<%# end %> -->
-                <% end %>
+          <% end %>
               </ul>
-
             </ul>
           </div>
         </div>

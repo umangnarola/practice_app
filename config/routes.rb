@@ -9,6 +9,7 @@ Rails.application.routes.draw do
 
   # get 'admin/show'
   resources :prodacts
+  resources :charges
   resource :cart, only: [:show]
  resources :order_items, only: [:create, :update, :destroy]
   post 'prodacts/updatestatus'

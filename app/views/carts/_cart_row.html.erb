@@ -1,4 +1,4 @@
-<html lang="en">
+<html >
 <head>
 </head>
 <body>
@@ -9,17 +9,13 @@
 					<thead>
 						<tr class="cart_menu">
 							<td class="description">Product Name</td>
-							<td class="description">Name</td>
-							<td class="price">Unit Price</td>
 							<td class="quantity">Quantity</td>
+							<td class="price">Unit Price</td>
 							<td class="total">Total Price</td>
 							<td colspan="3" align="center"> Action</td>
 						</tr>
 					</thead>
 					<tbody>
-            <p class="text-center">
-               <%= link_to "go back", prodacts_path %>
-            </p>
 						<tr>
               <%= form_for order_item, remote: true do |f| %>
 							<td class="cart_description">
@@ -48,6 +44,6 @@
 			</div>
 		</div>
 	</section>
-
 </body>
+
 </html>

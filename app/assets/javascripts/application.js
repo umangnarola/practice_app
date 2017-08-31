@@ -13,16 +13,5 @@
 //= require jquery
 //= require jquery_ujs
 //= require bootstrap.min
-//= require jquery.scrollUp.min
 //= require bootstrap-datepicker
-//= require bootstrap3-wysihtml5.all.min
-//= require dashboard
-//= require demo
-//= require fastclick
-//= require jquery.knob
-//= require jquery.slimscroll.min
-//= require jquery.sparkline.min
-//= require morris.min
-//= require price-range
-//= require jquery.prettyPhoto
 //= require main

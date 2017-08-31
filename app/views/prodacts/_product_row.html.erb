@@ -1,24 +1,21 @@
-
-<div class="well">
-
-  <div class="row">
-    <div class="col-xs-8">
-      <h6>Name:<%= prodact.name %></h6>
-      <h6>About Product :<%= prodact.decription %></h6>
-      <h6 >Availible Quantity :<span style="color: green"><%= prodact.quantity %></span></h6>
-    </div>
-    <div class="col-xs-4">
-      <%= form_for order_item, remote: true do |f| %>
-      <h6 class="text-right">Unit Price: <span style="color: green"><%=  prodact.price %></span></h6>
-        <div class="input-group">
-          <%= f.number_field :quantity, value: 1, class: "form-control", min: 1 %>
-          <div class="input-group-btn">
-            <%= f.hidden_field :prodact_id, value: prodact.id %>
-            <%= f.submit "Add to Cart", class: "btn btn-primary" %>
+    <div class="col-lg-3 col-md-6 mb-4" id="i1" >
+      <div class="card" id="i2">
+        <div class="card-body" >
+          <h6>Name:<%= prodact.name %></h6>
+          <p class="card-text"><h6>About Product :<%= prodact.decription %></h6></p>
+          <h6 >Availible Quantity :<span style="color: green"><%= prodact.quantity %></span></h6>
+        </div>
+        <div class="card-footer" >
+          <div class="col-xs-4">
+            <%= form_for order_item, remote: true do |f| %>
+            <h6 class="text-right">Unit Price: <span style="color: green"><%=  prodact.price %></span></h6></br>
+              <div div class="input-group">
+                <%= f.number_field :quantity, value: 1, class: "form-control", min: 1  %>
+                  <%= f.hidden_field :prodact_id, value: prodact.id %>
+                  <%= f.submit "Add to Cart", class: "btn btn-primary" %>
+              </div>
+            <% end %>
           </div>
         </div>
-      <% end %>
-    </div>
-
+      </div>
   </div>
-</div>

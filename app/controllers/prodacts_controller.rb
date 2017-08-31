@@ -7,7 +7,7 @@ class ProdactsController < ApplicationController
 
   def index
     @prodacts_all = Prodact.paginate :page => params[:page], :per_page => 5
-    @prodacts = Prodact.prodacts.paginate :page => params[:page], :per_page => 5
+    @prodacts = Prodact.prodacts.paginate :page => params[:page], :per_page => 8
     @order_item = current_order.order_items.new
   end
 

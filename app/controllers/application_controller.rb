@@ -3,8 +3,6 @@ class ApplicationController < ActionController::Base
   before_action :authenticate_user!, :current_user
   helper_method :current_order
 
-
-
   def after_sign_in_path_for(current_user)
    if current_user.role == 'admin'
      pages_index_path
@@ -23,6 +21,7 @@ class ApplicationController < ActionController::Base
   def new_session_path(scope)
     new_user_session_path
   end
+
   def current_order
     if !session[:order_id].nil?
       Order.find(session[:order_id])
@@ -30,13 +29,11 @@ class ApplicationController < ActionController::Base
       Order.new
     end
   end
+
   def create
-    # Create the user from params
     @user = User.new(params[:user])
     if @user.save
-      # Deliver the signup email
       UserNotifier.send_signup_email(@user).deliver
-
       redirect_to(@user, :notice => 'User created')
     else
       render :action => 'new'

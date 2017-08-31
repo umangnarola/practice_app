@@ -36,8 +36,11 @@
     <% @prodacts.each do |prodact| %>
     <%= render "product_row", prodact: prodact, order_item: @order_item %>
     <% end %>
+    <%= will_paginate @prodacts ,id:"fix"%>
   </tbody>
-  <%= will_paginate @prodacts %>
 </table>
 <br>
 <% end %>
+<style media="screen">
+
+</style>

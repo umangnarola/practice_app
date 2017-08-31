@@ -15,6 +15,7 @@ class PagesController < ApplicationController
       format.js
     end
   end
+
   def redirect_unless_admin
     unless current_user.role == "admin"
       redirect_to prodacts_path
